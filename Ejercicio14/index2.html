@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso-CSS | grid.areas</title>
+    <meta name="author" content="𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ">
+    <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
+    <!--<meta http-equiv="refresh" content="5"-->
+    <style>
+        .layout {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav main"
+                "footer footer";
+            /* Columnas de 1 fracción(nav) y 3 fracciones(main) */
+            grid-template-columns: 1fr 3fr;
+            /* header header= auto */
+            /* nav main = 1fr */
+            /* footer footer = auto */
+            grid-template-rows: auto 1fr auto;
+            gap: 20px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: bisque;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: rgb(244, 186, 114);
+        }
+
+        main {
+            grid-area: main;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgb(175, 184, 244);
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: rgb(253, 135, 177);
+        }
+
+        .producto {
+            flex: 1 1 200px;
+            padding: 1rem;
+            background-color: rgb(163, 253, 175);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="layout">
+        <header>Encabezado</header>
+        <nav>Menu</nav>
+        <main class="contenido">
+            <section class="producto">Producto1</section>
+            <section class="producto">Producto2</section>
+            <section class="producto">Producto3</section>
+        </main>
+        <footer>Pie de Pagina</footer>
+    </div>
+</body>
+
+</html>

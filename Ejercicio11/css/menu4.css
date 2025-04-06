@@ -1,0 +1,114 @@
+/* Hoja de estilos externa de: Ejercicio 11.4 */
+/* Estilo body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+header {
+    /*border: solid red 1px;*/
+    background: #b33f27;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Estilo nav */
+nav ul {
+    list-style: none;
+    margin: 0;
+	padding: 0;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    color: #d77866;
+    background: #d76650;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #913320;
+    list-style: none;
+    padding: 10px;
+    width: 150px;
+    border-radius: 8px;
+}
+.dropdown li {
+    padding: 5px 0;
+}
+.dropdown li a {
+    display: block;
+}
+.submenu:hover .dropdown {
+    display: block;
+}
+main {
+    padding-top: 100px;
+    text-align: center;
+    
+}
+
+@media (max-width:768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .dropdown {
+        /* empuja el header junto con dropdown */
+        position: static;
+        display: none;
+        background: none;
+        padding: 0;
+    }
+    /* focus-within == cuando tenga el foco */
+    .submenu:hover .dropdown, .submenu:focus-visible {
+        display: block;
+    }
+}
+/* 
+.end_menu nav {
+    color: #012554d6;
+    text-shadow: rgba(57, 63, 100, 1);
+    padding: 0.2% 0.2%;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    font-weight: 20px;
+    border-radius: 6px;
+    width: 100%;
+}
+/* 
+.a_inicio a:hover {
+    color: #056ffa;
+    font-weight: bold;
+    background-color: #ededffbd;
+    text-shadow: #45caff 1px 1px 1px;
+} */
+
+/* .copyrigth {
+    color: #c3c9e3;
+    background-color: #011733d6;
+    padding: 10px 0px 6px 0px;
+} */
+/*
+------------------------------------- Estilo nav Footer */

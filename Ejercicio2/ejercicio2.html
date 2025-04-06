@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso-CSS | div</title>
+    <meta name="author" content="𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ">
+    <link rel="stylesheet" type="text/css" href="/css/mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+    <style>
+        html,
+        body {
+            background-color: #938ba9;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 16px;
+            color: #2b1137;
+        }
+
+        #titulo,
+        #subtitulo {
+            text-align: center;
+            background-color: rgb(186, 173, 191);
+            padding: 2%;
+            margin: 0;
+            color: rgb(122, 113, 123);
+        }
+
+        #titulo {
+            padding-bottom: 0;
+            font-size: 40px;
+        }
+
+        #subtitulo {
+            padding-top: 0;
+        }
+
+        #noticias,
+        #eventos {
+            background-color: rgb(176, 161, 181);
+            box-shadow: #333 2px 2px 5px;
+            /* Hidden= ocupa todo el espacio */
+            overflow: hidden;
+            width: 76%;
+            margin: 20px auto;
+            padding: 2%;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        #noticias h2 {
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+        }
+
+        .col2 {
+            width: 19%;
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-left: 1%;
+            margin-right: 1%;
+            float: left;
+        }
+
+        .col3 {
+            width: 27%;
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-left: 1%;
+            margin-right: 1%;
+            float: left;
+        }
+
+        .patrocinadores {
+            background-color: rgb(124, 124, 149);
+            box-shadow: #333 2px 2px 5px;
+            overflow: hidden;
+            width: 76%;
+            margin: 20px auto;
+            padding: 2%;
+            text-align: center;
+            border-radius: 20px;
+            height: 5%;
+        }
+
+        .col5 {
+            background-color: coral;
+            color: #333;
+            overflow: hidden;
+            width: 18%;
+            padding: 0.5%;
+            margin: 0.5%;
+            float: left;
+            border-radius: 20px;
+        }
+
+        .patrocinadores .col5 {
+            background-color: bisque;
+            color: #333;
+        }
+
+        /*
+        ------------------------------------- Estilo nav Footer
+        */
+        /* Estilo nav */
+
+        nav {
+            background-color: #003580;
+            padding: 10px;
+            text-align: center;
+        }
+
+        a:link {
+            color: #c9caf6bd;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        a:active {
+            color: #8b4ac4;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #004aad;
+            font-weight: bold;
+            background-color: #b2b3f6bd;
+        }
+
+        a:visited {
+            color: #004aad;
+            font-weight: bold;
+            background-color: #b2b3f6bd;
+        }
+
+        footer {
+            background-color: #004bad76;
+            color: white;
+            text-align: center;
+            padding: 0;
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        .end_menu nav {
+            color: #012554d6;
+            text-shadow: rgba(57, 63, 100, 1);
+            padding: 0.2% 0.2%;
+            margin: 0;
+            text-align: center;
+            font-weight: 20px;
+            border-radius: 6px;
+            width: 100%;
+        }
+
+        .a_inicio a:hover {
+            color: #056ffa;
+            font-weight: bold;
+            background-color: #ededffbd;
+            text-shadow: #45caff 1px 1px 1px;
+        }
+
+        .copyrigth {
+            color: #c3c9e3;
+            background-color: #011733d6;
+            padding: 10px 0px 6px 0px;
+        }
+
+        /*
+        ------------------------------------- Estilo nav Footer
+        */
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">Bienvenidos a mi web de noticias y eventos</h1>
+    <h2 id="subtitulo">Noticias del Mundo</h2>
+
+    <div id="noticias">
+        <h1>Noticias deportivas</h1>
+        <h2>Última hora</h2>
+        <div class="col2">El Real Madrid ganó su partido contra el Atletico de Madrid el Miércoles en Champions</div>
+        <div class="col2">Este fin de semana el Valencia jugará contra el Málaga</div>
+        <div class="col2">El Real Madrid ganó su partido contra el Atletico de Madrid el Miércoles en Champions</div>
+        <div class="col2">Este Miércoles en Champions el Betis juega contra el PSG</div>
+    </div>
+
+    <div id="eventos">
+        <h1>Eventos deportivos</h1>
+        <h2>Últimos eventos</h2>
+        <div class="col3">Real Madrid - Barcelona</div>
+        <div class="col3">Atletico - Betis</div>
+        <div class="col3">Sevilla - Leganés</div>
+    </div>
+
+    <div class="patrocinadores">
+        <h2>Patrocinadores</h2>
+        <div class="col5">Cruz del campo</div>
+        <div class="col5">Miau</div>
+        <div class="col5">Drogaloca</div>
+        <div class="col5">Haykininen</div>
+        <div class="col5">Estela Gallega</div>
+    </div>
+
+    <div class="patrocinadores">
+        <h2>Patrocinadores</h2>
+        <div class="col5">Tu Carro</div>
+        <div class="col5">GameStore</div>
+        <div class="col5">DSkyProductions</div>
+        <div class="col5">Fuego Tech</div>
+        <div class="col5">Pub A La Fresca</div>
+    </div>
+    <div>
+        <h2>Logos</h2>
+        <div class="col5">Logo 1</div>
+        <div class="col5">Logo 2</div>
+        <div class="col5">Logo 3</div>
+        <div class="col5">Logo 4</div>
+        <div class="col5">Logo 5</div>
+    </div>
+
+    <footer>
+        <div class="end_menu">
+            <nav style="padding: 1%;">
+                <a class="a_inicio" href="#titulo">Inicio</a>
+                <a target="_self" href="../Ejercicio1/index.html">Ej.1</a>
+                <a target="_self" href="../Ejercicio1/index_2.html">Ej.1.2</a>
+                <a target="_self" href="../Ejercicio1/ejemplos_fuentes.html">Ej.1.F</a>
+                <a target="_self" href="../Ejercicio3/ejercicio3.html">DBZ</a>
+                <a target="_self" href="../Ejercicio2/paginapresentacionpersonal.html">Ej.2</a>
+                <a target="_self" href="../Ejercicio4/ejercicio4_flex.html">Ej.4</a>
+                <a target="_self" href="../Ejercicio5/ejercicio5.html">Ej.5</a>
+                <a target="_self" href="../Ejercicio6/index.html">Ej.6</a>
+            </nav>
+        </div>
+        <div class="copyrigth">
+            <p id="contacto"><a href="https://github.com/dsevillaprog" target="_blank">
+                    <strong>𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ©️</a>2025 </strong> Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

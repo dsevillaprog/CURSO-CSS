@@ -1,0 +1,351 @@
+/* Hoja de estilos externa de: Ejercicio 12 DSkyProductions */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+:root {
+    --margen-big:100px;
+    --margen-mid:50px;
+    --margen-low:20px;
+}
+.margen-div {
+    margin-top: var(--margen-big);
+    margin-bottom: var(--margen-big);
+}
+/* 
+.video {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    height: 2200px;
+    width: auto;
+} */
+.absolute {
+    position: absolute;
+
+    /* display: contents; */
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    width: 100vw;
+    height: auto;
+}
+
+.video {
+    animation: fadeIn 4s ease;
+}
+.video .clip {
+    /* flex-direction: column; */
+    /* z-index: -1; */
+    position: relative;
+    /* flex: 1; */
+    
+}
+header {
+    margin: 0;
+    /* float: bottom; */
+    color: #e9edfc;
+    padding: 0;
+    /* display: flex; */
+    align-items: center;
+    justify-content: left;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+
+
+.nav-bar {
+    position: relative;
+    top: -1070px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+ul {
+    list-style: none;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    margin: 0;
+    justify-content: center;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: large;
+    margin: 0;
+    color: #e9edfc;
+    font-weight: bold;
+    padding: 15px 15px;
+    transition: color 0.3s ease;
+    border-radius: 10px;
+}
+.logo-nav img {
+    padding: 0;
+    max-height: 50px;
+    max-width: auto;
+}
+nav ul li a:hover {
+    color: #e9edfc;
+    background: #a3b4ef42;
+    margin: 0;
+}
+
+
+.dropdown {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    padding: 10px; 
+    width: 150px;
+    background: #acbaeb69;
+    border-radius: 10px;
+}
+.dropdown li {
+    padding: 5px 0;
+}
+.dropdown li a {
+    display: block;
+}
+.dropdown li a:hover {
+    display: block;
+    background: #acbaeb00;
+}
+
+.dropdown li a:hover {
+    display: block;
+    background: #acbaeb5e;
+    align-items: flex-end;
+    position: static;
+    bottom: 0;
+}
+
+.submenu:hover .dropdown {
+    display: block;
+    background: #acbaeb00;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1.2rem 20rem;
+}
+
+
+
+
+
+main {
+    padding: 3%;
+    text-align: center;
+}
+.logo {
+    margin: 0;
+    padding: 0;
+    border-radius: 1px solid black;
+}
+.img-1 {
+    flex: 1;
+    height: auto;
+    width: 25vw;
+    border-radius: 40px;
+    justify-content: center;
+
+}
+.img-70-w {
+    flex: 1;
+    height: auto;
+    width: 70vw;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 0;
+    justify-content: center;
+
+}
+.img-full-w {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 0 0 80px #83d0ffb5;
+    justify-content: center;
+}
+.img-DSky {
+    z-index: 555;
+    position: relative;
+    border-radius: 10px;
+    bottom: 350px;
+    right: 0;
+
+}
+.img-DSky-slogan {
+    border-radius: 10px;
+    z-index: 555;
+    position: relative;
+    bottom: 250px;
+    right: 0;
+
+}
+
+
+.team {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    width: 90%;
+}
+.team-img {
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 2vw;
+}
+
+h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+/* .destacar {
+    filter: drop-shadow(0 0 40px rgba(110, 172, 247, 0.849));
+} */
+
+
+
+
+footer {
+    text-align: center;
+    background-color: #859df6;
+    border: solid rgb(65, 240, 12) 1px;
+    color: #e9edfc;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+footer .dropdown {
+    display: none;
+    list-style: none;
+    position: absolute;
+    bottom: 500px;
+    left: 10px;
+    /* background: #acbaeb69; */
+    border-radius: 8px;
+    width: 150px;
+}
+
+footer .dropdown li {
+    padding: 5px 0;
+}
+
+footer .dropdown li a {
+    display: block;
+}
+
+footer .dropdown li a:hover {
+    display: block;
+    background: #acbaeb5e;
+    align-items: flex-end;
+    position: static;
+    bottom: 0;
+}
+
+footer .submenu:hover .dropdown {
+    display: block;
+    /* background: #acbaeb38; */
+}
+
+footer nav {
+    /* background: #acbaeb5e; */
+    border: solid rgb(221, 17, 224) 1px;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+footer a:link {
+    color: #e9edfc;
+    text-decoration: none;
+    margin: 0;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+footer nav ul a.logo-nav:hover {
+    background-color: #ffffff00;
+}
+footer a:hover {
+    color: #004aad;
+    font-weight: bold;
+    background-color: #b2b3f6bd;
+}
+table {
+    width: 100%;
+    background-color: #9dbdf8dd;
+    background-image: url(../img/logo_dron.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #e9edfc;
+    padding: 0;
+    margin: 0;
+    display: block;
+    align-items: center;
+}
+
+thead {
+    
+    font-weight: bold;
+    
+}
+
+tfoot {
+    
+    background-color: #3b6296dd;
+}
+
+.a-inicio a:hover {
+    color: #056ffa;
+    font-weight: bold;
+    background-color: #ededffbd;
+    text-shadow: #45caff 1px 1px 1px;
+}
+
+.copyrigth {
+    width: 100%;
+    color: #c3c9e3;
+    background-color: #0117337a;
+    border-radius: 8px;
+    padding: 10px 0px 0px 0px;
+}
+
+.a-drones {
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from {transform: translateY(-40px); opacity: 20%;}
+    to {transform: translateY(0px); opacity: 100%;}
+}

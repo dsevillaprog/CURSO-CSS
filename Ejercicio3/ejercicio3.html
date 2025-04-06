@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ">
+    <title>Curso-CSS | Transition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html,
+        body {
+            /* background-image: url(img/dragon_todos.webp); */
+            background-size: cover;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #261436;
+            margin: 0;
+            padding: 0;
+            border-radius: 15px;
+        }
+
+        #eventos {
+            background-image: url(img/comic_BW.jpg);
+            background-color: #2a1a38;
+            width: 80%;
+            margin: 0px auto;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: #333 5px 5px 10px;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(140, 133, 150);
+            text-shadow: #42354e 2px 2px 1px;
+            font-size: 40px;
+            padding: 10px;
+        }
+        #sagas h1 {
+            background-color: #3e304f;
+            border-radius: 8px;
+            box-shadow: #333 3px 3px 3px;
+            width: 80%;
+            margin: 15px auto;
+            padding: 10px;
+            opacity: 0.95;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border 1s ease;
+        }
+        #sagas h1:hover {
+            background-color: #4c3b62;
+            transform: scale(1.01);
+            box-shadow: 3px 3px 12px #bfa0ee;
+            border: rgb(42, 30, 64) 1px solid;
+            cursor: col-resize;
+        }
+
+        h2 {
+            color: rgb(161, 158, 164);
+            text-shadow: #a995bc 1px 1px 1px;
+            padding: 8px;
+        }
+
+        .caja {
+            background-color: #3e304f;
+            border-radius: 8px;
+            box-shadow: #333 3px 3px 3px;
+            width: 80%;
+            margin: 15px auto;
+            padding: 10px;
+            opacity: 0.95;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border 1s ease;
+        }
+
+        .caja:hover {
+            background-color: #4c3b62;
+            transform: scale(1.01);
+            box-shadow: 3px 3px 12px #bfa0ee;
+            border: rgb(42, 30, 64) 1px solid;
+            cursor: pointer;
+        }
+
+        .caja h1 {
+            font-size: 30px;
+        }
+
+        .caja h1:hover {
+            color: #ffb3a3;
+            opacity: 1;
+            font-size: 2.2em;
+            text-shadow: #ffaaaac4 1px 0px 2px;
+            cursor: copy;
+        }
+        .caja h2:hover {
+            color: #e2e1e497;
+            font-size: 1.6em;
+            opacity: 1;
+            cursor: alias;
+        }
+
+        .caja img {
+            width: 80%;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.5s ease, filter 0.5 ease, border 0.5s ease;
+            opacity: 1;
+        }
+
+        .caja img:hover {
+            border: #261f2e 2px solid;
+            transition: transform scale(1.05) ease;
+            filter: brightness(41);
+            filter: contrast(1.5);
+            cursor: cell;
+        }
+
+        /* -------------------------------------------		a */
+        a {
+            text-decoration: none;
+            color: #729fcf;
+        }
+
+        a:hover {
+            color: #afadb0;
+            background-color: #49325b;
+            box-shadow: #8f0e217d;
+            border: solid 1px #41315c;
+            font-weight: bold;
+            border-radius: 5px;
+            text-shadow: rgb(38, 43, 73);
+            padding: 5px 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* -------------------------------------------		footer */
+        footer {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            padding: 0;
+            height: 20%;
+            display:column;
+        }
+        /* -------------------------------------------		pie_pag */
+        .pie_pag div {
+            background-color: #6637b75f;
+            opacity: 0.5;
+            text-shadow: rgba(57, 63, 100, 1);
+            padding: 1% 0.2%;
+            margin: 0;
+            height: 100%;
+            text-align: center;
+            font-weight: 20px;
+        }
+        .pie_pag div:hover {
+            opacity: 1;
+        }
+        /* -------------------------------------------		pie_pag */
+        .logo_pie_pag div {
+            background-color: #6637b75f;
+            opacity: 0.5;
+            text-shadow: rgba(57, 63, 100, 1);
+            padding: 1% 0.2%;
+            margin: 0;
+            height: 100%;
+            text-align: center;
+            font-weight: 20px;
+        }
+        .logo_pie_pag div:hover {
+            opacity: 1;
+        }
+
+    </style>
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function enableAutoplay() {
+            x.autoplay = true;
+            x.load();
+        }
+    </script>
+</head>
+
+<body onload="enableAutoplay()">
+    <div class="song">
+        <audio id="myAudio" autoplay>
+            <source src="img/dbz_tele.ogg" type="audio/ogg">
+        </audio>
+    </div>
+
+    <div id="eventos">
+        <h1 id="sagas">Sagas de Dragon Ball</h1>
+        <div class="caja">
+            <h1>Dragon Ball</h1>
+            <h2>Serie inicial de Dragon Ball</h2>
+            <img src="img/dbz_nube.jpeg" alt="Goku serie inicial">
+        </div>
+        <div class="caja">
+            <h1>Dragon Ball Z</h1>
+            <h2>Serie Dragon Ball Z</h2>
+            <img src="img/back_Red.jpeg" alt="Dragon Ball Z">
+
+        </div>
+        <div class="caja">
+            <h1>Dragon Ball GT</h1>
+            <h2>Serie Dragon Ball GT</h2>
+            <img src="img/chichiDBZ.jpeg" alt="Dragon Ball GT">
+        </div>
+        <div class="caja" id="super">
+            <h1>Dragon Ball Super</h1>
+            <h2>Serie Dragon Ball Super</h2>
+            <img src="img/portadaDBZ_low.jpg" alt="Dragon Ball Super">
+        </div>
+    </div>
+
+    <!-- <p>mediante un
+        <button type="button" onclick="myFunction_2()">Script</button>
+        llamado "myScript.js" en el que se encuentra la función myFunction_2().</p>
+        <script src="jscript/myScript.js"></script> -->
+
+    <footer class="pie_pag">
+            <!-- <a href="../test/index.html">Home</a>
+            <a href="../test/music.html">Música</a> -->
+            <div class="logo_pie_pag">
+                <a href="#super" onclick="enableAutoplay()"><img src="img/nube_ico.png" style="height: 200px"></a>
+                <audio  id="myAudio">
+                    <source src="img/dbz_teletransportacion_low5.ogg" type="audio/ogg">
+                    
+                </audio>
+            </div>
+        <div class="logo_pie_pag">
+            <p><a href="../index.html">&#160; 𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ©️ &#160;</a>  2025 Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

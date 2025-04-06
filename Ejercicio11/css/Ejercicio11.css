@@ -1,0 +1,104 @@
+/* Hoja de estilos externa de: Ejercicio 11 */
+/* Estilo body */
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+header {
+    /*border: solid red 1px;*/
+    background: #b33f27;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+h1 {
+    text-align: center;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+footer {
+    background-color: #004bad76;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* Estilo nav */
+nav ul {
+    list-style: none;
+	padding: 0;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(244, 204, 204);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* Ancho de los enlaces */
+    min-width: 200px;
+    display: block;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: #d77866;
+}
+
+@media (max-width:768px) {
+    header {
+        /* distribuir items en columnas */
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 15px;
+    }
+    nav ul li a {
+        background-color: #d77866;
+        border-radius: 10px;
+        padding: 10px;
+        /* Ancho de los enlaces */
+        min-width: 200px;
+        display: block;
+    }
+    
+}
+
+.end_menu nav {
+    color: #012554d6;
+    text-shadow: rgba(57, 63, 100, 1);
+    padding: 0.2% 0.2%;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    font-weight: 20px;
+    border-radius: 6px;
+    width: 100%;
+}
+/* 
+.a_inicio a:hover {
+    color: #056ffa;
+    font-weight: bold;
+    background-color: #ededffbd;
+    text-shadow: #45caff 1px 1px 1px;
+} */
+
+.copyrigth {
+    color: #c3c9e3;
+    background-color: #011733d6;
+    padding: 10px 0px 6px 0px;
+}
+/*
+------------------------------------- Estilo nav Footer

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso-CSS | Custom.css-var</title>
+    <meta name="author" content="𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ">
+    <link rel="stylesheet" type="text/css" href="css/Ejercicio14.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        /* Crear variables css personalizadas */
+        :root {
+            --rojoprincipal: #b33f27;
+            --espaciado:20px;
+        }
+
+        header {
+            background: var(--rojoprincipal);
+            padding: var(--espaciado);
+        }
+        .personalizado {
+            width: calc(100% - 40px);
+            padding-top: calc(2rem + 50px);
+            background: var(--rojoprincipal);
+            border: 1px solid black;
+        }
+        .contenedor {
+            background: var(--rojoprincipal);
+            border: 1px solid black;
+            /* Ancho mínimo 90% si no supera 800px */
+            width: min(90%, 800px);
+            /* Alto máximo 50 vh sin pasar de 400px */
+            height: min(50vh, 200px);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <h1>Prueba background</h1>
+    </header>
+    <div class="personalizado">Prueba personalizada</div>
+    <div class="contenedor">Prueba personalizada 2</div>
+    
+</body>
+
+</html>

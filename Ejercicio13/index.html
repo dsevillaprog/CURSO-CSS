@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso-CSS | grid-template-</title>
+    <meta name="author" content="𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ">
+    <link rel="stylesheet" type="text/css" href="css/Ejercicio13.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            /* 3 columnas de 1 fracción */
+            grid-template-columns: repeat(3,1fr);
+                /* 2 filas de 100px de alto */
+            grid-template-rows: repeat(2,200px);
+            gap: 15px;
+            width: 1000px;
+            height: 650px;
+            margin: 50px auto;
+            background: #3b6b63;
+            padding: 20px;
+        }
+        .item {
+            border: solid 1px black;
+            background: #acf6a8;
+            color: rgb(39, 34, 34);
+            display: flex;
+            /* Alineación horizontal */
+            justify-content: center;
+            /* Alineación vertical */
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item"><h1>3</h1></div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+<footer>
+    <p><a href="../Ejercicio1/index.html"><img class="logo-css" src="../img/logo-css.png"></a></p>
+</footer>
+</html>

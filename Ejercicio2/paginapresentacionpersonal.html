@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso-CSS | SobreMi</title>
+    <meta name="author" content="𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ">
+    <!-- Comentario_de_descripción_del_programa -->
+    <!-- <link rel="stylesheet" type="text/css" href="/css/mystyle.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        /* En style usar comentarios de css */
+        /* Estilos generales de la web*/
+        html {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(31, 12, 45);
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(35, 25, 46);
+            background-image: url("../../test/img/music_2.jpg");
+        }
+
+        /* Estilos del header*/
+        header {
+            background-color: #2c1f32;
+            text-shadow: #9a7cbdb3;
+            color: rgba(179, 165, 192, 0.936);
+            text-align: center;
+            padding: 25px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 0 0 60px #e2bcf6b8;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(195, 182, 203);
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            text-align: left;
+            color: rgb(36, 17, 46);
+            margin: 0;
+            padding: 0;
+        }
+
+        h4 {
+            text-align: left;
+            color: rgb(195, 182, 203);
+            margin: 0 0 20px 50px;
+            padding: 0;
+        }
+
+        /* Estilo de párrafo class=nombre */
+        #nombre {
+            font-size: 35px;
+            text-align: center;
+            color: #aeacaf;
+            text-shadow: 0 0 60px #dd98ffcc;
+            margin: 0;
+            padding: 25px;
+        }
+
+        /* Estilo de párrafo class=sobremi */
+        .sobremi {
+            height: 50px;
+            font-size: 18px;
+            color: #1d1753;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+        }
+
+        .mis_proyectos p h2 {
+            text-align: left;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            width: 30%;
+            color: #aeacaf;
+            text-shadow: rgba(72, 42, 102, 0.744);
+            display: flex;
+            margin: 0;
+            padding: 5%;
+            border-radius: 10px;
+            border-color: #252128;
+
+        }
+
+        p {
+            text-align: left;
+            margin: 0px 0px 20px 70px;
+            padding: 0;
+            color: #aeacaf;
+            text-shadow: rgba(72, 42, 102, 0.744);
+
+        }
+
+        .proyectos {
+            text-align: left;
+            display: flex;
+            text-shadow: #aeacaf;
+            color: rgb(175, 180, 190);
+            margin: 0px 10px 0px 5px;
+            padding: 1.5%;
+            border-radius: 10px;
+        }
+
+        /* Aplicar estilo a class=contenido */
+        .contenido {
+            width: 100%;
+            margin: 0;
+            background-color: rgb(187, 187, 187);
+            padding: 3%;
+            box-shadow: 0 0 10px rgba(0, 0, 0.1);
+            text-align: center;
+            float: left;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        aside {
+            width: 15%;
+            border-radius: 10px;
+            /* Elemento flotante a la derecha*/
+            float: right;
+            background-color: #c9b0d3;
+            color: #2b0d3f;
+            padding: 2%;
+            margin-top: 0%;
+            margin-bottom: 100px;
+            margin-right: 8%;
+            box-shadow: 2px 2px 5px rgba(110, 96, 114, 0.706);
+        }
+
+        .pasatiempos ul li p {
+            color: #271d27;
+            text-align: left;
+            margin: 0;
+            margin-top: 1%;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #6a6770;
+            color: rgb(69, 67, 76);
+            text-align: center;
+            border-radius: 10px;
+            padding: 0;
+            margin-top: 10px;
+            float: none;
+            width: 100%;
+            height: 20%;
+            overflow: hidden;
+        }
+
+        .logos {
+
+            width: 100%;
+            height: 50px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-items: center;
+            align-items: center;
+            margin: auto;
+            padding: 2%;
+            background-image: url(../Ejercicio4/img/gif/git_circl.png);
+        }
+
+        .logos:hover {
+            background-image: url(../Ejercicio4/img/gif/git_circl.gif);
+        }
+
+        footer a:link {
+            text-decoration: none;
+            color: #354747;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        footer p {
+            padding-left: 15px;
+            padding-right: 15px;
+            color: #b0d2d2;
+        }
+
+        .derechos {
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+            align-items: center;
+        }
+
+
+        footer .social a {
+            height: 40px;
+            width: 40px;
+            background-image: url(../img/git_circl.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex: 1;
+        }
+
+        footer .social a:hover {
+            background-image: url(../img/git_circl.gif);
+            text-decoration: none;
+            font-weight: bold;
+            color: #b0d2d2;
+            text-shadow: 2px 1px 4px rgba(23, 153, 214, 0.616);
+
+        }
+
+        footer .pie_pag a:hover {
+            text-decoration: none;
+            font-weight: bold;
+            color: #b0d2d2;
+            text-shadow: 2px 1px 4px rgba(23, 153, 214, 0.616);
+            padding: 11px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Comentario_body -->
+    <header>
+        <h1 id="titulo-web" >Mi Página de Presentación</h1>
+        <p id="nombre">𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘</p>
+
+    </header>
+    <div class="contenido">
+        <h2>Sobre mi:</h2>
+        <p class="sobremi">Programador autodidacta, comencé a programar con scripts en batch muy simples, de ahí pasé a Arduino, y desde hace unos años realizo programas y scripts para Linux.</p>
+        <p class="sobremi">Sé algo de C++ y Java, ahora estoy aprendiendo HTML y CSS en este curso.</p>
+    </div>
+    <div id="mis_proyectos">
+        <h2 class="proyectos">Proyectos</h2>
+        <p></p>
+        <h4>Buscadores_web.bat / .sh</h4>
+        <p> - Herramienta con múltiples buscadores, páginas web y recursos.</p>
+        <p>Busca un término por categorías, en una de las opciones o en todas.</p>
+        <br>
+
+        <h4>Alarma_GSM.ino</h4>
+        <p> - Alarma realizada en Arduino con comunicación GSM.</p>
+        <p>Avisa mediante llamadas/sms a una lista números en el orden definido.</p>
+        <p>Permite conectar multitud de sensores y actuadores para su monitorización y control, accesos, presencia, niveles, tensiones, GPS, relés, contactores, ...</p>
+        <br>
+
+        <h4>Autotube.sh</h4>
+        <p> - Reproduce listas de reproducción de Youtube y Spotify en bucle.</p>
+        <p>Conecta con una VPN + Reproduce los videos de una o varias listas + Hace una pausa personalizada + Cambia de IP con otra VPN + (loop).</p>
+        <br>
+
+        <h4>Roli-sounds.sh</h4>
+        <p> - Banco de sonidos personalizado del teclado Roland-GO:Keys.</p>
+        <p>Búsqueda de sonidos por Tipos, Estilos, Cualidades, Efectos, Favoritos, Listas de Estilos, etc.</p>
+        <p>Permite buscar sonidos por una o varias cualidades: FX delay:h sustain:l phaser bass-fx Soul Rock, ...</p>
+        <br>
+
+        <h4>html_build.sh</h4>
+        <p> - Construye la estructura y enlaza los archivos de un proyecto web.</p>
+        <p> - Realiza copias de seguridad del proyecto.</p>
+        <p>*html_build.sh Proyecto</p>
+        <p>Proyecto/(css/Proyecto.css)(html/index.html)(img/buttons, icons)(jscript/jstyleProyecto.js, jdataProyecto.js)</p>
+        <br>
+
+        <h4>img_convert.sh</h4>
+        <p> - Convierte Imágenes con ImageMagick.</p>
+        <p>Recorta, redimensiona, y aplica múltiples filtros y efectos a las imágenes de una carpeta.</p>
+        <br>
+
+        <h4>Sed_loop-R.sh</h4>
+        <p> - Modifica recursivamente los archivos de una o varias extensiones dentro de la ruta de trabajo.</p>
+        <p>Elije una extensión o modifica recursivamente un proyecto web (.html, .css, .js).</p>
+        <p>*Añade la clase "mi-clase" a todas las etiquetas ul sin atributos:</p>
+        <p>Buscar: <strong>&#60;ul></strong></p>
+        <p>Cambiar:<strong>&#60;ul class="mi-clase"></strong></p>
+        <br>
+
+        <h4>Eachine VR-D2Pro Circuit Bending</h4>
+        <p> - Se modifica la electrónica de las gafas FPV Eachine VR-D2Pro.</p>
+        <p>Se le añade una entrada de video RCA y salida de audio Jack 3.5.</p>
+        <br>
+
+        <h4>Casio SA-1 Circuit Bending </h4>
+        <p> - Modificación de la electrónica del teclado Casio SA-1.</p>
+        <p>Se le añaden 2 octavas, 3 niveles de reverb y modulación mediante LDR.</p>
+        <br>
+
+        <h4></h4>
+        <p></p>
+        <p></p>
+        <br>
+
+    </div>
+    <div class="pasatiempos">
+        <aside>
+            <h3>AFICIONES</h3><br>
+            <ul>
+                <li>
+                    <p>Programación</p>
+                </li>
+                <li>
+                    <p>Drones FPV</p>
+                </li>
+                <li>
+                    <p>Arduino</p>
+                </li>
+                <li>
+                    <p>Electrónica</p>
+                </li>
+                <li>
+                    <p>Edición de música</p>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <div class="logos">
+            <a href="#nombre">
+                <!-- <img style="opacity: 0.5" border="0" border-radius="50%" src="../Ejercicio4/img/gif/git_circl.png" width="50" height="50"> -->
+            </a>
+
+            <div class="social">
+                <a target="_blank" href="https://github.com/dsevillaprog/Curso-CSS"></a>
+            </div>
+            <p class="pie_pag"><a href="../index.html">𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ©️</a></p>
+            <p class="derechos"> <strong>&MediumSpace;2025&MediumSpace;</strong> Todos los derechos
+                reservados&MediumSpace;&MediumSpace;</p>
+            <p id="fin"><a class="icon-up" href="#titulo-web">⬆️</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

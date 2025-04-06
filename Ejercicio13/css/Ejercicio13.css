@@ -1,0 +1,223 @@
+/* Hoja de estilos externa de: Ejercicio 13.2 FuegoTech*/
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #a8442e;
+    color: rgb(222, 209, 209);
+    background-image: url(../img/fondo-llamas2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.top {
+    margin: 0;
+    padding: 0;
+    height: 1px;
+    width: auto;
+    background: #c75833eb;
+    /* border: 1px solid #cc6f40; */
+    box-shadow: -1px -1px 80px #fa2a00;
+    z-index: -15445;
+}
+
+header {
+    border-bottom-right-radius: 4%;
+    border-bottom-left-radius: 4%;
+    background: #963a1bed;
+    color: rgb(238, 213, 187);
+    /*border: solid red 1px;*/
+    text-align: center;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+}
+
+header h1 {
+    flex: auto;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 450px;
+    font-size: 50px;
+    transition: transform .3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header h1:hover {
+    color: #dd9208;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0 1px 7px #8c0b02d1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    margin-right: 70px;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0, 3s;
+}
+
+nav ul li a:hover {
+    color: #dd9208;
+    font-weight: bold;
+    text-shadow: 0 0 45px #ffdc9a;
+}
+
+.hero {
+    box-shadow: -1px -1px 40px #fa2a00;
+    background: url('../img/chimenea-2.gif') no-repeat center;
+    background-size: cover;
+    margin-top: 120px;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .7);
+    opacity: .6;
+}
+
+.catalogo {
+    margin-top: 120px;
+}
+
+section h2 {
+    font-size: 76px;
+    opacity: 1.4;
+    color: azure;
+}
+
+section p {
+    font-size: 32px;
+    opacity: 1.4;
+    color: azure;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 80px 80px;
+    justify-content: space-between;
+}
+
+.item {
+    background: #913320d3;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform .3s, box-shadow .3s;
+    box-shadow: 0 1px 20px #ed7c0baf;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item h3 {
+    margin-top: 10px;
+}
+.item p {
+    color: #91332000;
+}
+.item:hover {
+    background: #7d2c1cef;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+    box-shadow: 0 1px 20px #ede20baf;
+}
+.item img,p:hover{
+    color: azure;
+}
+
+footer {
+    background-image: url(../img/banner-titulo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    box-shadow: 0 0 45px #824c12ed;
+    background-color: #5a2910f0;
+    /* color: rgb(105, 104, 104); */
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    padding: 0;
+    margin-top: 80px;
+    font-size: 20px;
+    transition: transform .6s ease, box-shadow .5s ease, background-color .6s ease, border-top-right-radius .5s ease, border-top-left-radius .5s ease;
+    /* background-image: url(../../../llama-line-blk.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+}
+footer:hover {
+    box-shadow: 0 0 40px #826212ed;
+    background-color: #321507;
+    border-top-right-radius: 45%;
+    border-top-left-radius: 45%;
+}
+footer p {
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+}
+
+footer p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #dd9208;
+}
+.c_bla a {
+    color: rgb(252, 231, 197);
+}
+.logo-css {
+    max-width: 50px;
+    height: auto;
+    filter: drop-shadow(0 0 25px rgba(54, 57, 255, 0.74));
+    transition: transform .4s ease, filter .4s ease;
+}
+
+.logo-css-up:hover {
+    transform: translateX(-50px);
+}
+
+.logo-css:hover {
+    filter: drop-shadow(0 0 15px rgba(152, 153, 249, 0.986));
+    transform: scale(1.3);
+}
+
+
+@media(max-width:768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+}

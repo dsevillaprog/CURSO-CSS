@@ -1,0 +1,431 @@
+/* Hoja de estilos externa de: Ejercicio 4 */
+/* RESET CSS 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font:inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ ╭──────────────────────────────────────────────────────────────────── CSS
+ ╰─ 
+&copy;... https: //www.toptal.com/designers/htmlarrows/symbols/
+#HEX_code https: //rgbcolorcode.com/color/converter/
+
+ ╭──────────────────────────────────────────────────────────────────── COLORES
+ ╰─ .btn-primary {
+    color: #fff;
+    background-color: #7d4698;
+    PRIMARIO border-color: #7d4698
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #673a7e;
+    OSCURO border-color: #603675;
+} */
+html, body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ece9ee;
+    /*7d4698*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: solid red 1px;
+    font-size: 14px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cabecera {
+    background-color: #673a7e;
+    border: solid rgb(108, 231, 242) 1px;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 20%;
+    padding: 1.7%;
+    display: flex;
+    align-items: center;
+    /* Ajusta el contenido de los <div> hijos */
+    justify-content: space-between;
+    /* Distribuye el contenido proporcional/ según *gap:()(sólo con flex)*/
+    gap: 10px;
+    /* Espacio entre div's*/
+}
+
+.logo, .socials {
+    background-color: #7d4698;
+    padding: 0;
+    border: solid rgb(222, 225, 12) 1px;
+    border-radius: 10px;
+    box-shadow: #4c2a5d -3px -2px -3px;
+    /* Espacio  que ocupará*/
+    flex: 1;
+    gap: 10px;
+}
+
+.logo {
+    background-image: url(../img/onion.png);
+    position: relative;
+    background-position: center;
+}
+
+.titulo {
+    /* Espacio  que ocupará*/
+    flex: 9;
+    font-size: 2.5em;
+    gap: 10px;
+}
+
+.socials {
+    width: 15%;
+}
+
+.logo picture {
+    flex: 1;
+    background-image: url(../img/onion.png);
+    gap: 8px;
+    background-color: #7d4698;
+    padding: 0;
+    border: solid rgb(222, 225, 12) 1px;
+    border-radius: 10px;
+    box-shadow: #4c2a5d -3px -2px -3px;
+    position: relative;
+}
+picture:hover {
+    /* background-color: #985bb6; */
+    background-image: url(../img/onion.gif);
+}
+
+.logo:hover {
+    /* background-color: #985bb6; */
+    background-image: url(../img/onion.gif);
+    padding: 0;
+    border: #603675;
+    box-shadow: #7d5192 -3px 2px 3px;
+    border-radius: 15px;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.4s ease, border 0.5s ease;
+}
+
+.cabecera .titulo h1 {
+    text-align: center;
+    color: #281c2e;
+    text-shadow: #c26feb 2px 2px 2px;
+    margin: 0;
+    padding: 2% 0;
+    border: solid rgb(47, 13, 234) 1px;
+}
+
+.cabecera .titulo h1:hover {
+    color: #3a2345;
+    text-shadow: #c26feb 3px 2px 5px;
+    cursor: none;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.4s ease, border 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    gap: 10px;
+    display: flex;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+p {
+    /* Espacio  que ocupará*/
+    flex: 1;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera .socials {
+    /* Espacio  que ocupará*/
+    flex: 1;
+    gap: 10px;
+    background-color: #7d4698;
+    padding: 0;
+    border: solid rgb(214, 30, 187) 1px;
+}
+
+.social_head {
+    flex: 1;
+    gap: 10px;
+}
+
+
+.cabecera .socials img {
+    background-color: #7d4698;
+    box-shadow: #311b3b -3px -2px -3px;
+    border: solid rgb(214, 30, 187) 1px;
+    border-radius: 15px;
+}
+
+.cabecera .socials img:hover {
+    /* Espacio  que ocupará*/
+    flex: 1;
+    background-color: #985bb6;
+    border: #603675;
+    border-radius: 15px;
+    box-shadow: #7d5192 3px 2px 3px;
+    transform: scale(1.2);
+    transition: transform 0.3s ease, box-shadow 0.4s ease, border 0.5s ease;
+}
+
+.cuerpo {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: solid rgb(97, 219, 16) 1px;
+    background-color: rgba(152, 91, 182, 0.8);
+    position: relative;
+    width: 100%;
+    justify-items: center;
+}
+
+.cuerpo img {
+    /* Espacio  que ocupará*/
+    flex: 1;
+    gap: 10px;
+    /* height: 250px; */
+}
+
+.cuerpo-fondo {
+    background-image: url(../img/Sliced-Onion_tr.png);
+    background-attachment: fixed;
+    /* fijar fondo */
+    background-color: #985bb6;
+    /*985bb6*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    /* Ajusta el contenido de los <div> hijos */
+    justify-content: space-between;
+    /* Distribuye el contenido proporcional/ según *gap:()(sólo con flex)*/
+    gap: 10px;
+    /* Espacio entre div's*/
+    width: 90%;
+    justify-items: center;
+}
+
+.cuerpo-sup {
+    font-family: "src=fonts/Roboto-Bold.ttf";
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+    border: solid rgb(69, 181, 44) 1px;
+    rotate: 1 1 0 6deg;
+    display: flex;
+    width: 90%;
+    /* Ajusta el contenido de los <div> hijos */
+    justify-content: space-between;
+    /* Distribuye el contenido proporcional/ según *gap:()(sólo con flex)*/
+    gap: 10px;
+    /* Espacio entre div's*/
+    position: relative;
+}
+
+.cuerpo-sup img {
+    flex: 1;
+    gap: 10px;
+    /* Espacio  que ocupará*/
+    margin: 0;
+    padding: 0;
+    border: solid rgb(174, 79, 50) 1px;
+}
+
+.cuerpo-sup p {
+    flex: 1;
+    gap: 10px;
+    width: 90%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    margin: 0;
+    padding: 10% 0;
+    color: #454523;
+    border: solid rgb(112, 90, 117) 1px;
+    overflow: hidden;
+    font-size: 2.3em;
+    position: relative;
+}
+
+.cuerpo-mid {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    border: solid rgb(219, 219, 16) 1px;
+    text-align: center;
+    position: relative;
+}
+
+.cuerpo-fin {
+    margin: 0;
+    padding: 2%;
+    border: solid rgb(63, 83, 49) 1px;
+    display: flex;
+    /* Ajusta el contenido de los <div> hijos */
+    justify-content: space-between;
+    /* Distribuye el contenido proporcional/ según *gap:()(sólo con flex)*/
+    gap: 10px;
+    position: relative;
+}
+
+.body-txt {
+    flex: 1;
+    gap: 10px;
+    font-size: 1.3em;
+}
+
+.body-txt-long {
+    flex: 2;
+    gap: 10px;
+    font-size: 1.5em;
+}
+
+.txt-cuerpo-sup {
+    flex: 2;
+    gap: 10px;
+    padding: 2%;
+    font-size: 1.5em;
+}
+
+.img-cuerpo {
+    flex: 1;
+}
+
+.pie {
+    height: 15%;
+    width: 90%;
+    position: relative;
+    display: flex;
+    padding: 2%;
+    /* Ajusta el contenido de los <div> hijos */
+    justify-content: space-between;
+    /* Distribuye el contenido proporcional/ según *gap:()(sólo con flex)*/
+    gap: 20px;
+}
+/* 
+.social_pie {
+    flex: 1;
+} */
+.address.p {
+    font-family: "src=fonts/Roboto-Bold.ttf";
+    flex: 1;
+    text-align: left;
+    border: solid red 1px;
+    font-size: 0.8rem;
+}
+
+.img-pie {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+/* Estilo RESPONSIVE *
+@media (max-width:768px) {
+    * Resolución tablet *
+    body,
+    html {
+        background-color: #985bb6;
+        font-size: 12px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+    .logo {
+        background-image: url(../img/onion.gif);
+    }
+
+    .body-txt,
+    .body-txt-long {
+        font-size: 0.8rem;
+    }
+
+    .cuerpo-mid,
+    .cuerpo-fin {
+        font-size: 0.8em;
+    }
+
+    .cuerpo-fin {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:450px) {
+
+    body,
+    html {
+        background-color: #866b93;
+    }
+
+    .titulo {
+        font-size: 1.1rem;
+    }
+    .logo {
+        background-image: url(../img/onion.ama.gif);
+    }
+
+    .body-txt,
+    .body-txt-long {
+        font-size: 0.7rem;
+    }
+
+    .cuerpo-mid,
+    .cuerpo-fin {
+        font-size: 0.8rem;
+    }
+
+    .cuerpo-fin {
+        font-size: 0.8rem;
+    }
+} */

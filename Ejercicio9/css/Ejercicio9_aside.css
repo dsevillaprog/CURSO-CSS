@@ -1,0 +1,693 @@
+/* Hoja de estilos externa de: Ejercicio 9.1 */
+/* RESET CSS
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font:inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
+/* Estilo body */
+html {
+    background-color: #a6c4f79b;
+    justify-content: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #5474ac;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+
+}
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    /* (position: fixed;)Fijar elemento en (top:,left:) */
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    /* justify-content: center; */
+
+    width: 100%;
+    padding: 0.8% 2%;
+    margin: 0;
+    background-color: rgb(16, 32, 84);
+    box-shadow: 0px 8px 25px #2f5ba8;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(244, 204, 204);
+    text-shadow: rgba(4, 73, 105, 0.3);
+    font-weight: bold;
+    padding: 14px 18px;
+    min-width: 200px;
+    border-radius: 8px;
+    transition: transform 0.5s ease, color 0.4s ease, border 0.3s ease, padding .4s ease;
+}
+nav ul li a:hover {
+    color: rgb(14, 11, 180);
+    background-color: #b2d2fba5;
+    text-shadow: rgba(4, 73, 105, 0.3);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+nav ul .dropdown li a {
+    text-decoration: none;
+    color: rgb(244, 204, 204);
+    text-shadow: rgba(4, 73, 105, 0.3);
+    font-weight: bold;
+    padding: 14px 14px;
+    min-width: 200px;
+    border-radius: 8px;
+    transition: transform 0.5s ease, color 0.4s ease, border 0.3s ease, padding .4s ease;
+}
+nav ul .dropdown li a:hover {
+    color: rgb(14, 11, 180);
+    background-color: #b2d2fbf7;
+    text-shadow: rgba(4, 73, 105, 0.3);
+    /* padding: 1.8%; */
+}
+/* ------------------------------ general nav-link */
+/* nav a {
+    padding: 14px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+nav a:link {
+    color: #76cece;
+}
+
+nav a:visited {
+    color: green;
+}
+
+nav ul li a:hover {
+    color: rgb(14, 11, 180);
+    background-color: #b2d2fbf7;
+    text-shadow: rgba(4, 73, 105, 0.3);
+    padding: 1.2%;
+}
+
+nav a:active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(15, 105, 133);
+} */
+
+/* ------------------------------------------- header común */
+header {
+    text-align: center;
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    border: 0;
+    border-bottom-right-radius: 2%;
+    color: #b2d2fb87;
+    text-shadow: 3px 1px 6px #98b5e7;
+    box-shadow: 0px 2px 26px #ff7adc;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    background-image: url(../img/fondo_pad_cut_fix1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: bottom; */
+    display: inline;
+    align-items: center;
+    /* z-index: 1; */
+
+}
+
+/* fondo-productos
+fondo-psx
+fondo-nintendo
+fondo-pie_pagina */
+/* .fondo-banner {
+    background-image: url(../img/fondo_pad_cut_fix.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+} */
+/* a:link {
+    text-decoration: none;
+    color: #45caff;;
+}
+a:hover {
+    color: #004aad;
+} */
+h1 {
+    color: #092350;
+    text-shadow: #b2b3b4 1px 1px 8px;
+    /* flex: 3; */
+    /* font-size: 3em; */
+}
+h2 {
+    text-align: center;
+    color: #cee0fee5;
+    text-shadow: #b2b3b4 1px 1px 8px;
+}
+p {
+    color: #092350e1;
+}
+hr {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    line-height: 5px;
+    color: #545cb1;
+}
+
+
+
+/* .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  } */
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: rgb(14, 11, 180);
+    background-color: #b2d2fbf7;
+    text-shadow: rgba(4, 73, 105, 0.3);
+    padding: 1.2%;
+
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    color: rgb(14, 11, 180);
+    background-color: #b2d2fbf7;
+    text-shadow: rgba(4, 73, 105, 0.3);
+    padding: 1.2%;
+}
+
+  .dropdown:hover .dropdown-content {
+    color: rgb(14, 11, 180);
+    background-color: #b2d2fbf7;
+    text-shadow: rgba(4, 73, 105, 0.3);
+    padding: 1.2%;
+    display: block;
+  }
+
+  /* .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  } */
+
+/* ------------------------------------------------- Animaciones */
+
+.titulo-web {
+
+    margin-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    padding-top: 5%;
+    text-align: center;
+    animation: fadeIn-titulo 4s ease;
+    background-image: url(../img/fondo_pad_cut1.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: bottom; */
+    display: block;
+    align-items: center;
+}
+.banner {
+    animation: fadeIn-banner 1.4s ease-in-out;
+}
+.slideIn {
+    animation: 1.5s ease-in-out;
+}
+
+/* ------------------------------------------------- PRODUCTOS
+*/
+.titulo-productos h1 {
+    text-align: left;
+    font-size: 3em;
+
+}
+.aside-block {
+    position: absolute;
+    top: 500px;
+    right: 150px;
+}
+main {
+    background-color: #092350;
+    width: 95%;
+}
+.catalogo {
+    width: 95%;
+    padding: 20px;
+    margin: auto;
+    /* background-color: #041433; */
+    border-radius: 15px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    background-color: #315284;
+    box-shadow: 1px -2px 35px #4b73b977;
+    display: block;
+
+}
+
+#psx {
+    padding: 5%;
+    justify-content: space-around;
+    border: solid rgb(31, 65, 116)  1px;
+    display: flex;
+    border-radius: 15px;
+    background: #1e39628f;
+    box-shadow: 10px 12px 15px #79b1fae4;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #395c8f;
+    /* Wrap apila el contenido si no tiene espacio */
+    flex-wrap: wrap;
+    background-image: url(../img/back_map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+#nintendo {
+    padding: 5%;
+    justify-content: space-around;
+    border: solid #2f4f80 1px;
+    display: flex;
+    border-radius: 15px;
+    background: #1e396281;
+    box-shadow: 10px 10px 25px #ed6868c5;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #395c8f;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    /* Wrap apila el contenido si no tiene espacio */
+    flex-wrap: wrap;
+    background-image: url(../img/back_map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+article img {
+   width: 70%;
+}
+
+.psx-logo {
+    width: 100%;
+    height: 400px;
+    background-color: #18376e4d;
+    background-image: url(../img/psx_name.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+}
+.nintendo-logo {
+    width: 2000px;
+    height: 300px;
+    background-color: #18376e4d;
+    background-image: url(../img/nintendo-vector-logo-400x400.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+}
+#psx article p a {
+    text-decoration: none;
+    color: #9a46ce
+}
+#nintendo article p a {
+    text-decoration: none;
+    color: #a62af4
+}
+
+.producto {
+    gap: 1%;
+    border: solid rgb(31, 65, 116) 1px;
+    box-shadow: 3px 8px 20px #193f809a;
+    color: white;
+    background-color: #0923509a;
+    padding: 15px;
+    border-radius: 22px;
+    width: 15%;
+    height: 20%;
+    text-align: center;
+    /* position: relative para que sus hijos puedan tener absolute */
+    position: relative;
+    /* Valores para transiciones de transform */
+    transition: transform 0.6s ease, background-color 0.5s ease, border 0.4s ease, cursor 0.3s ease;
+    margin: 10px;
+}
+.producto p {
+    visibility: collapse;
+}
+.producto .precio {
+    visibility: collapse;
+}
+.producto:hover p{
+    visibility: visible;
+}
+.producto:hover .precio{
+    visibility: visible;
+}
+.precio {
+
+    transition: transform 0.6s ease, color 0.8s ease;
+}
+.producto img {
+    border-radius: 20px;
+}
+.producto:hover {
+    transform: scale(1.02);
+    background-color: #b8d2f5b6;
+    box-shadow: 10px 10px 20px #559bf6b9;
+    border-color: #45caff;
+    cursor: progress;
+    color: #092350;
+}
+.producto .precio:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+    color: #174798;
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: #45ff5b; */
+    border-radius: 10px;
+    padding: 5px;
+    height: 60px;
+    max-width: 80px;
+    cursor: pointer;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+button.reservar {
+    background-color: #33e142c2;
+}
+
+button.comprar {
+    background-color: #f1bf1bd4;
+}
+/* ------------------------------------------------- PRODUCTOS
+*/
+/* ------------------------------------------------- INDEX
+*/
+.cuerpo {
+    padding: 20px;
+    margin: auto;
+    background: #1e3962;
+    border: solid #26497d 1px;
+    background-image: url(../../img/back_map.png);
+    /* background-repeat: repeat-y; */
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    display: block;
+    width: 90%;
+    align-items: center;
+    color: rgb(174, 174, 174);
+    text-shadow: #8299af 1px 1px 2px;
+    box-shadow: 2px 2px 50px #b0c2df;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.cuerpo div {
+    flex: 1;
+    padding: 2%;
+    margin: 2%;
+    /* border: solid red 1px; */
+}
+
+.cuerpo h2,h3 {
+    text-align: center;
+}
+.cuerpo p {
+
+    color: rgb(176, 175, 175);
+}
+
+.cuerpo .imagen_dest {
+    flex: 3;
+    border: solid rgb(0, 255, 42) 1px;
+    border-radius: 20px;
+    box-shadow: 50px 10px 20px #acacace4;
+}
+
+.cuerpo .quien_somos {
+    flex: 3;
+    border: solid rgb(75, 98, 180) 1px;
+    box-shadow: 3px 5px 40px #acacace4;
+    text-align: center;
+    border-radius: 20px;
+    /* border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%; */
+    background-color: #14284bec;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/ByN_pad_cut.jpg);
+}
+
+.cuerpo .nos_dedicamos {
+    /* flex-wrap: wrap;
+    display: block; */
+    border: solid rgb(108, 125, 196) 1px;
+    box-shadow: 1px 2px 40px #e7b1fae4;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/psx_buttons_txt.jpg);
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 720px;
+    padding-left: 5%;
+    margin-bottom: 2%;
+    padding-bottom: 10%;
+}
+
+.nos_dedicamos-spdown {
+    background-image: url(../img/spider-man-dow.png);
+    background-repeat: no-repeat;
+    background-size: 10vw;
+    width: 200px;
+    background-position: top;
+    padding: 0;
+    /* overflow: hidden; */
+    /* z-index: 0; */
+}
+.nos_dedicamos-kame {
+    background-image: url(../img/kame_R.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+    width: 100%;
+    height: 600px;
+    background-position: right;
+    padding: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.bounce {
+    animation: bounce 7s infinite;
+    height: 320px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+
+}
+.cuerpo .servicios {
+    border: solid rgb(108, 125, 196) 1px;
+    box-shadow: 1px 2px 40px #e7b1fae4;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/nintendo_neon_cut_filter.jpg);
+    background-attachment: fixed;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    padding: 4%;
+}
+.cuerpo .servicios h5 {
+    color: rgb(255, 183, 235);
+}
+.cuerpo .servicios p {
+    color: rgb(221, 221, 221);
+}
+
+.cuerpo .servicios li {
+    list-style-type: none;
+    border-radius: 15px;
+}
+
+.titulo-pie {
+    background-image: url(../img/psx_buttons.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 50%;
+    width: 45%;
+    height: 150%;
+    align-items: center;
+    margin: auto;
+}
+.titulo-pie h1 {
+    text-align: center;
+    color: #96b4e8e5;
+    text-shadow: #b2b3b4 1px 1px 8px;
+    transition: transform 0.6s ease, color 0.8s ease, text-shadow 0.5s ease;
+}
+.titulo-pie h1:hover {
+    color: #bed4fae5;
+    text-shadow: #959696 1px 1px 5px;
+    transform: scale3d(1.6,1.2,1.6);
+    transform-style: preserve-3d;
+}
+
+/* ------------------------------------------------- footer común */
+footer {
+    display: flex;
+    background-color: #092350b4;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    align-items: center;
+    height: 20%;
+    padding: 1%;
+}
+/* unvisited link */
+footer a:link {
+    text-decoration: none;
+    color: #354747;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+footer p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer .social a {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    background-image: url(../img/git_circl.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+}
+
+footer .social a:hover {
+    background-image: url(../img/git_circl.gif);
+    text-decoration: none;
+    font-weight: bold;
+    color: #b0d2d2;
+    text-shadow: 2px 1px 4px rgba(23, 153, 214, 0.616);
+    padding: 11px;
+
+}
+
+footer .pie_pag a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #b0d2d2;
+    text-shadow: 2px 1px 4px rgba(23, 153, 214, 0.616);
+    padding: 11px;
+
+}
+/* ------------------------------------------------- Animaciones */
+/* Crear animación fadeIn */
+@keyframes fadeIn-titulo {
+    from {opacity: 0;}
+    to {opacity: 0.94;}
+}
+@keyframes fadeIn-banner {
+
+    from {opacity: 0.8; transform: translateY(-200px);}
+    to {opacity: 1; transform: translateY(-50);}
+}
+@keyframes bounce {
+    0%, 100% {transform: translateY(-100px);}
+    30% {transform: translateY(-530px);}
+
+}

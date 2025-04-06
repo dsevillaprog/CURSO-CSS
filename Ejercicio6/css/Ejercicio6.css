@@ -1,0 +1,107 @@
+/* Hoja de estilos externa de: Ejercicio 6 */
+html,
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: rgba(221, 243, 255, 0.931);
+    font-size: 12px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2rem;
+    /* x2 el tamaño de la raíz*/
+    margin-bottom: 20px;
+}
+
+.catalogo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    font-size: 14;
+}
+
+.producto {
+    flex: 1;
+    border: 1px solid #525050;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+.catalogo .producto p {
+    font-size: 0.7em;
+}
+
+.producto img {
+    /* img dentro de .producto*/
+    width: 100%;
+    padding: 5%;
+    max-width: 250px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.producto img:hover {
+    /* img dentro de .producto al hacer hover*/
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.precio {
+    font-weight: bold;
+    color: #0a7;
+    margin-top: 10px;
+}
+
+/* Estilo para dispositivos pequeños */
+@media (max-width:768px) {
+
+    /* Resolución tablet */
+    body,
+    html {
+        background-color: #26ae26;
+    }
+
+    .catalogo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .producto {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .producto img {
+        padding: 10px;
+        max-width: 80%;
+    }
+}
+
+@media(max-width:450px) {
+
+    body,
+    html {
+        background-color: #525050;
+    }
+
+    .producto {
+        padding: 5px;
+        width: 95%;
+    }
+
+    .producto img {
+        max-width: 80%;
+    }
+}
