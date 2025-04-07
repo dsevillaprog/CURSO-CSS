@@ -5,7 +5,7 @@
     --secundario:#d77866;
     --oscuro:#4d1b11;
     --claro:#f7f7f7;
-    --espacio20:20px;
+    --espacio20:30px;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
     "header header header"
     "banner banner banner"
     "nav main sidebar"
-    "nav galeria sidebar"
+    "galeria galeria galeria"
     "footer footer footer ";
     gap: var(--espacio20);
     padding: var(--espacio20);

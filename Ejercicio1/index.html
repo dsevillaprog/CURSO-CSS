@@ -6,7 +6,7 @@
          Aquí se irán enlazando los Ejemplos y Ejercicios del curso -->
     <meta charset="UTF-8">
     <title>Curso-CSS | Inicio del Curso de CSS</title>
-    <meta name="author" content="𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ">
+    <meta name="author" content="𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
         html,
@@ -22,7 +22,6 @@
             text-decoration: none;
         }
 
-        /* Estilos del header*/
         header {
             box-shadow: 0 1px 45px #172c8abb;
             background-color: #333;
@@ -67,13 +66,15 @@
             color: white;
             font-size: 18px;
             padding: 22px;
+            transition: transform .4s ease-in-out, background-color .2s ease-in-out, box-shadow .4s ease-in-out, font-weight .1s ease-in-out;
         }
 
         /* Aplicar estilo a: a dentro de li dentro de ul y dentro de nav al pasar el ratón por encima */
+        /* color logo-css= #006EBA */
         nav ul li a:hover {
             text-shadow: 0px 1px 34px rgba(255, 255, 255, 0.708);
             box-shadow: 0 1px 45px #5e5d5dc2;
-            background-color: #4444449c;
+            background-color: #3549815b;
             color: rgb(224, 223, 230);
             font-weight: bold;
         }
@@ -112,23 +113,15 @@
             height: auto;
         }
 
-        /* .regla-css {
-            background-image: url(../img/regla-css.png);
-            width: 40vw;
-            height: 30vw;
-            background-size: contain;
-        } */
 
         .destacado {
             background-color: yellow;
-            /* Grosor de fuente*/
             font-weight: bold;
             padding: 10px;
         }
 
         aside {
             width: 18%;
-            /* Elemento flotante a la derecha*/
             box-shadow: 2px 8px 45px #041634d4;
             background-color: #ddd;
             border-radius: 8px;
@@ -142,13 +135,7 @@
             border: 1px solid rgba(205, 201, 201, 0.805);
             width: 100%;
             height: auto;
-            /* takes precedence over the width set with the HTML width attribute */
         }
-
-
-
-
-
 
 
         footer {
@@ -217,7 +204,7 @@
 </head>
 
 <body>
-    <!-- Índice del Curso de HTML:
+    <!-- Índice del Curso de CSS:
          Aquí se irán enlazando los Ejemplos y Ejercicios del curso -->
     <header>
         <h1 id="titulo-web">Bienvenido al Curso de CSS</h1>
@@ -231,6 +218,7 @@
             <li><a href="../../Curso-CSS/Ejercicio9/index.html">GAMESTORE</a></li>
             <li><a href="../../Curso-CSS/Ejercicio12/index.html">DSKY PROD</a></li>
             <li><a href="../Ejercicio13/index2.html">FUEGO TECH</a> </li>
+            <li><a href="../Ejercicio14/index3.html">ARQUI BLOG</a> </li>
             <li><a href="#fin">CONTACTO</a> </li>
 
 
@@ -261,8 +249,11 @@
             <h3>Entonces ¿qué es CSS, realmente?</h3>
         </div>
         <div>
-            <p>Como <b><a href="../../Curso-HTML/index.html">HTML</a>, CSS</b> (Cascading Style Sheets) u Hojas de estilo en cascada en español, <b>no es realmente un lenguaje de programación</b>, tampoco es un lenguaje de marcado.</p>
-            <p>Es un <b>lenguaje de hojas de estilo</b>, es decir, te permite aplicar estilos de manera selectiva a elementos en documentos HTML.</p>
+            <p>Como <b><a href="../../Curso-HTML/index.html">HTML</a>, CSS</b> (Cascading Style Sheets) u Hojas de
+                estilo en cascada en español, <b>no es realmente un lenguaje de programación</b>, tampoco es un lenguaje
+                de marcado.</p>
+            <p>Es un <b>lenguaje de hojas de estilo</b>, es decir, te permite aplicar estilos de manera selectiva a
+                elementos en documentos HTML.</p>
             <br>
         </div>
         <br>
@@ -334,37 +325,24 @@
         </div>
         <br>
         <!-- Párrafos -->
-        <p id="P_uno">Párrafo_1 en UTF-8 para ver las eñes,con un identificador asignado= P_uno, con una palabra
-            <strong>resaltada</strong> y un<br> salto de línea forzado
+        <p id="P_uno">Párrafo_1 en UTF-8 para ver las eñes,con un identificador asignado= P_uno, con una palabra <strong>resaltada</strong> y un<br> salto de línea forzado
         </p>
-        <p id="P_dos">Párrafo_2 contiene una palabra <strong
-                id="palabra">extre<wbr>madísima<wbr>mente<wbr>larga</strong> que se divide por <code>wbr</code> al
-            ampliar el navegador y tiene asignado el id=palabra</p>
+        <p id="P_dos">Párrafo_2 contiene una palabra <strong id="palabra">extre<wbr>madísima<wbr>mente<wbr>larga</strong> que se divide por <code>wbr</code> al ampliar el navegador y tiene asignado el id=palabra</p>
         <p>Click para modificar el Párrafo_1</p>
-        <button type="button"
-            onclick='document.getElementById("P_uno").innerHTML = "Cambia el párrafo_1 en base a su id=P_uno"'>Click
-            aquí!</button><br>
-        <p>Este botón <button type="button"
-                onclick="document.getElementById('P_dos').style.fontSize='25px'">Aumenta</button> el tamaño de letra en
-            P_dos</p>
-        <p>Y este <button type="button"
-                onclick="document.getElementById('P_dos').style.fontSize='10px'">Disminuye</button> el tamaño de letra
-            en P_dos</p>
+        <button type="button" onclick='document.getElementById("P_uno").innerHTML = "Cambia el párrafo_1 en base a su id=P_uno"'>Click aquí!</button><br>
+        <p>Este botón <button type="button" onclick="document.getElementById('P_dos').style.fontSize='25px'">Aumenta</button> el tamaño de letra en P_dos</p>
+        <p>Y este <button type="button" onclick="document.getElementById('P_dos').style.fontSize='10px'">Disminuye</button> el tamaño de letra en P_dos</p>
         <p>Y este <button type="button" onclick="document.getElementById('P_dos').style.fontSize=''">No tiene
                 asignado</button> el tamaño de letra en P_dos</p>
-        <p>Y este otro<button type="button" onmouseover="document.getElementById('P_dos').style.color='green'">Cambia el
-                color</button> en P_dos al pasar por encima</p>
+        <p>Y este otro<button type="button" onmouseover="document.getElementById('P_dos').style.color='green'">Cambia el color</button> en P_dos al pasar por encima</p>
         <br>
 
-        <p>En este generamos una <button type="button" onclick="AlertFunction()">Alerta</button> mediante la función
-            AlertFunction().</p>
+        <p>En este generamos una <button type="button" onclick="AlertFunction()">Alerta</button> mediante la función AlertFunction().</p>
 
         <script>
             function AlertFunction() { alert('Alerta: Alerta generada mediante script'); }
         </script>
-        <p id="demo"><button onclick="document.getElementById('demo').innerHTML=Date()">
-                Ver Date
-            </button> </p>
+        <p id="demo"><button onclick="document.getElementById('demo').innerHTML=Date()">Ver Date</button></p>
 
     </section>
     <aside>
@@ -443,10 +421,6 @@
                 <li>
                     <p><a href="../Ejercicio14/index3.html">Ejercicio 14.3</a> - ArquiBlog</p>
                 </li>
-
-
-
-
             </ul>
             <br>
             <h2>Recursos Web</h2>
@@ -459,6 +433,7 @@
                 <li><a target="_blank" href="https://lenguajecss.com/css/layout/display-css/">CSS_Esp</a></li>
                 <li><a target="_blank" href="https://aulaclic.es/index.htm">AulaClick</a></li>
                 <br>
+                <!-- mono-compuestos-tonos-pers -->
                 <li><a target="_blank" href="https://color.adobe.com/es/">Adobe Color</a></li>
                 <li><a target="_blank" href="https://www.colorhunt.co/palettes/random">Paletas de Color</a></li>
                 <li><a target="_blank" href="https://www.colourlovers.com/">Paletas de Color</a></li>
@@ -471,14 +446,11 @@
                 <br>
                 <li><a target="_blank" href="https://imagemagick.org/">Imagemagick</a></li>
                 <li><a target="_blank" href="https://usage.imagemagick.org/">Imagemagick_use</a></li>
-                <li><a target="_blank"
-                        href="https://imagemagick.org/script/command-line-processing.php#option">Imagemagick_CLI</a>
+                <li><a target="_blank" href="https://imagemagick.org/script/command-line-processing.php#option">Imagemagick_CLI</a>
                 </li>
-                <li><a target="_blank"
-                        href="https://imagemagick.org/script/magick-vector-graphics.php">Imagemagick_CLI_vector</a></li>
                 <br>
                 <li><a target="_blank" href="https://rss.bloople.net/">RSS iframe</a></li>
-                <li><a target="_blank" href="https://emojidb.org/">Iconos copy</a> ©𖣠℘ꪗ</li>
+                <li><a target="_blank" href="https://emojidb.org/">Iconos copy</a> ©𖣠Ƥ𝓨</li>
                 <!-- 𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘=Mathematical Double-Struck  𝓓𝓢𝓮𝓿𝓲𝓵𝓵𝓪𝓟𝓻𝓸𝓰=Mathematical Bold Script  BlackChancery-->
                 <li><a target="_blank" href="https://oldenglishfont.net/">Fuentes</a> 🄵🅾🄽🆃🅂</li>
                 <li><a target="_blank" href="https://www.sonidosmp3gratis.com">MP3 Sounds 🎵</a></li>
@@ -496,9 +468,9 @@
     </aside>
     <footer>
         <div class="social">
-            <a target="_blank" href="https://github.com/dsevillaprog/Curso-CSS"></a>
+            <a target="_blank" href="https://github.com/dsevillaprog/"></a>
         </div>
-        <p class="pie_pag"><a href="mailto:dsevillaprog@fakemail.dsp">𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ©️</a></p>
+        <p class="pie_pag"><a href="../index.html">𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ©️</a></p>
         <p class="derechos"> <strong>&MediumSpace;2025&MediumSpace;</strong> Todos los derechos
             reservados&MediumSpace;&MediumSpace;</p>
         <p id="fin"><a class="icon-up" href="#titulo-web">⬆️</a></p>
