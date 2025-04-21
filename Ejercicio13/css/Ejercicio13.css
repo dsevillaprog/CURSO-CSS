@@ -66,10 +66,11 @@ nav ul {
     margin-right: 70px;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 20px 15px;
 }
 
 nav ul li a {
@@ -84,7 +85,14 @@ nav ul li a:hover {
     font-weight: bold;
     text-shadow: 0 0 45px #ffdc9a;
 }
-
+.fire-gif {
+    max-width: 20px;
+    max-height: 20px;
+}
+.fire-gif-arriba {
+    max-width: 30px;
+    max-height: 30px;
+}
 .hero {
     box-shadow: -1px -1px 40px #fa2a00;
     background: url('../img/chimenea-2.gif') no-repeat center;
@@ -189,6 +197,9 @@ footer p a {
     text-decoration: none;
     font-weight: bold;
     color: #dd9208;
+}
+.pie_pag a:hover {
+    color: rgb(101, 198, 213);
 }
 .c_bla a {
     color: rgb(252, 231, 197);

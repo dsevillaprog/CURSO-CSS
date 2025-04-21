@@ -1,0 +1,98 @@
+/* Hoja de estilos externa de: Ejercicio 19 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --space-lo: 10px;
+    --space-low: 20px;
+    --space-mid: 40px;
+    --space-big: 50px;
+    --space-hig: 100px;
+
+    --space-lo-p: 1%;
+    --space-low-p: 3%;
+    --space-mid-p: 5%;
+    --space-big-p: 8%;
+    --space-hig-p: 13%;
+    --space-full-p: 100%;
+
+    --height-lo: 150px;
+    --height-low: 200px;
+    --height-mid: 300px;
+    --height-big: 450px;
+    --height-hig: 600px;
+
+
+    --height-lo-p: 15%;
+    --height-low-p: 25%;
+    --height-mid-p: 50%;
+    --height-big-p: 70%;
+    --height-hig-p: 90%;
+    --height-full-p: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(216, 210, 210);
+}
+
+header {
+    /*border: solid red 1px;*/
+    color: aliceblue;
+    background: #003580;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: var(--space-full-p);
+    height: var(--height-low-p);
+}
+
+.top img {
+    max-width: var(--space-big);
+    margin: var(--space-low);
+}
+
+.top h1,
+h4 {
+    padding: var(--space-lo-p);
+}
+
+
+.top-img {
+    width: 100%;
+    height: var(--height-mid);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.top-img img{
+	
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+}
+.top-img-txt {
+    text-align: center;
+    color: rgb(102, 104, 106);
+    font-weight: bold;
+    position: absolute;
+    bottom: 560px;
+    left: 35vw;
+}
+
+nav {
+    display: flex;
+}
+a {
+	text-decoration: none;
+}
+nav ul li a {
+color:black;
+}

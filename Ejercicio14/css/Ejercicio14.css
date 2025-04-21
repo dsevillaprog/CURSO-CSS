@@ -166,6 +166,21 @@ footer p, footer a {
     from {transform: translateX(-100px); opacity: 0;}
     to {transform: translateX(0px); opacity: 1;}
 }
+@media (max-width:768px) {
+    .grid-contenedor {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: (7, auto);
+        grid-template-areas: 
+        "header"
+        "baner"
+        "nav"
+        "main"
+        "galeria"
+        "sidebar"
+        "footer";
+    }
+}
 /* 
 .end_menu nav {
     color: #012554d6;
