@@ -14,6 +14,15 @@ body {
     margin-top: var(--margen-big);
     margin-bottom: var(--margen-big);
 }
+.link {
+    text-decoration: none;
+    color: black;
+    transition: transform .5s ease-in-out, margin .5s ease-in-out;
+}
+.link:hover {
+    color: #14096b;
+    margin-left: 150px;
+}
 /* 
 .video {
     position: absolute;
@@ -35,15 +44,21 @@ body {
 }
 
 .video {
-    animation: fadeIn 4s ease;
+    animation: fadeIn 6.5s ease;
+    /* animation: fadeInVid 6.5s ease infinite; */
+    opacity: 1;
+    z-index: 2122;
+    height: 100%;
+    width: 100%;
 }
-.video .clip {
+.clip {
     /* flex-direction: column; */
     /* z-index: -1; */
     position: relative;
     /* flex: 1; */
     
 }
+
 header {
     margin: 0;
     /* float: bottom; */
@@ -67,6 +82,29 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+    z-index: 9999;
+}
+.nav-bar-serv {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    z-index: 9999;
+}
+.nav-bar-norm {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    z-index: 9999;
 }
 ul {
     list-style: none;
@@ -88,6 +126,17 @@ nav ul li a {
     font-size: large;
     margin: 0;
     color: #e9edfc;
+    font-weight: bold;
+    padding: 15px 15px;
+    transition: color 0.3s ease;
+    border-radius: 10px;
+}
+
+.nav-bar-norm ul li a {
+    text-decoration: none;
+    font-size: large;
+    margin: 0;
+    color: #4c4e54;
     font-weight: bold;
     padding: 15px 15px;
     transition: color 0.3s ease;
@@ -164,7 +213,6 @@ main {
     width: 25vw;
     border-radius: 40px;
     justify-content: center;
-
 }
 .img-70-w {
     flex: 1;
@@ -175,6 +223,22 @@ main {
     margin-top: 0;
     justify-content: center;
 
+}
+.img-top-serv {
+    flex: 1;
+    height: auto;
+    width: 100vw;
+    position: relative;
+    top: -100px;
+    justify-content: center;
+}
+.img-top-norm {
+    flex: 1;
+    height: auto;
+    width: 100vw;
+    position: relative;
+    top: -95px;
+    justify-content: center;
 }
 .img-full-w {
     flex: 1;
@@ -202,18 +266,36 @@ main {
     right: 0;
 
 }
+.txt-DSky-serv {
+    font-size: 3rem;
+}
+.txt-DSky-slogan-serv {
+    border-radius: 10px;
+    z-index: 555;
+    position: relative;
+    bottom: 538px;
+}
+
 
 
 .team {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    align-items: end;
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    padding: 30px 50px;
     width: 90%;
 }
 .team-img {
-    max-width: 500px;
+    width: 500px;
+    height: auto;
     padding: 30px;
     border-radius: 2vw;
+}
+.team p {
+    margin: 0;
+    padding: 1%;
 }
 
 h1 {
@@ -267,7 +349,7 @@ footer .dropdown li a {
 
 footer .dropdown li a:hover {
     display: block;
-    background: #acbaeb5e;
+    background: #82949d53;
     align-items: flex-end;
     position: static;
     bottom: 0;
@@ -290,17 +372,17 @@ footer a:link {
     text-decoration: none;
     margin: 0;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
     border-radius: 6px;
 }
 
 footer nav ul a.logo-nav:hover {
     background-color: #ffffff00;
 }
-footer a:hover {
-    color: #004aad;
-    font-weight: bold;
-    background-color: #b2b3f6bd;
+footer tfoot a:hover {
+    color: #c7e1fb;
+    text-shadow: 0 0 10px #03c6e8aa;
+    /* background-color: #b2b3f690; */
 }
 table {
     width: 100%;
@@ -328,8 +410,8 @@ tfoot {
 
 .a-inicio a:hover {
     color: #056ffa;
-    font-weight: bold;
-    background-color: #ededffbd;
+    /* font-weight: bold; */
+    background-color: #ededff46;
     text-shadow: #45caff 1px 1px 1px;
 }
 
@@ -346,6 +428,12 @@ tfoot {
 }
 
 @keyframes fadeIn {
-    from {transform: translateY(-40px); opacity: 20%;}
+    from {transform: translateY(-40px);opacity: 20%;}
     to {transform: translateY(0px); opacity: 100%;}
+
+}
+@keyframes fadeInVid {
+    from {opacity: 20%;}
+    to {opacity: 100%;}
+
 }
