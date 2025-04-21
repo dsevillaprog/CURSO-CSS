@@ -1,0 +1,256 @@
+    /* Hoja de estilos externa de: Ejercicio 20*/
+
+    /* Variables de color por defecto (Tema claro) */
+    :root {
+      --fondo-principal: #181818;
+      --color-texto: #f0f0f0;
+      --color-header-footer: #b40054;
+      --color-nav: #222;
+      --color-boton: rgb(247, 227, 244);
+      --color-hover-boton: #333;
+      --color-item: #6f5561;
+      --color-item-hover: #555;
+      --color-header-text: rgb(241, 227, 234);
+      --color-nav-text: #b40054;
+      --color-nav-hover: white;
+      --color-footer-hover: #880341;
+      --valor: 0;
+    }
+
+    /* Variables para el Tema Oscuro */
+    body.oscuro {
+
+
+      --fondo-principal: #f0f0f0;
+      --color-texto: #333;
+      --color-header-footer: #333;
+      --color-nav: #444;
+      --color-boton: white;
+      --color-hover-boton: #333;
+      --color-item: #ddd;
+      --color-item-hover: #bbb;
+      --color-header-text: white;
+      --color-nav-text: white;
+      --color-nav-hover: #d70065;
+      --color-footer-hover: #331725e1;
+      --valor: 1;
+    }
+
+    /* Reset general */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      display: grid;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+      grid-template-rows: auto 50px 1fr auto;
+      min-height: 100vh;
+      transition: background-color 0.3s, color 0.3s;
+      background-color: var(--fondo-principal);
+      color: var(--color-texto);
+      position: absolute;
+    }
+
+
+    header {
+      grid-area: header;
+      background-color: var(--color-header-footer);
+      color: var(--color-header-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    header .logo {
+      font-size: 1.8rem;
+    }
+
+
+    nav {
+      grid-area: nav;
+      background-color: var(--color-nav);
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--color-nav-text);
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: var(--color-nav-hover);
+    }
+
+
+    main {
+      grid-area: main;
+      padding: 20px;
+      color: var(--color-texto);
+    }
+
+    .hero {
+      background: var(--color-header-footer);
+      padding: 50px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .portfolio {
+      margin-top: 40px;
+    }
+
+    .portfolio h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .grid-item {
+      background-color: var(--color-item);
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease-in-out, background-color 0.3s;
+    }
+
+    .grid-item:hover {
+      background-color: var(--color-item-hover);
+      transform: scale(1.01);
+    }
+
+    .grid-item img {
+      max-width: 100%;
+      filter: grayscale(var(--valor));
+      border-radius: 8px;
+    }
+
+    .about {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .destaque {
+      font-size: 50px;
+      text-shadow: 0 0 35px #d70868;
+      transition: transform .6s ease-in-out, text-shadow .5s ease-in-out, cursor .6s ease-in-out;
+    }
+    .destaque a {
+      text-decoration: none;
+      color: var(--color-texto);
+    }
+    .destaque:hover {
+      text-shadow: 0 0 55px #d3a910fc;
+      cursor: pointer;
+    }
+    .destaque-link {
+      padding: 10px;
+      font-size: 50px;
+      text-shadow: 0 0 35px #bf63d8fe;
+      transition: transform .6s ease-in-out, text-shadow .3s ease-in-out, font-size .3s ease-in-out;
+    }
+    .destaque-link a {
+      text-decoration: none;
+      color: var(--color-texto);
+      cursor: pointer;
+    }
+    .destaque-link:hover {
+      text-shadow: 0 0 65px #d3a910fc;
+      transform: scale(1.3);
+    }
+    .destaque-link-azu:hover {
+      text-shadow: 0 0 85px #0b1cdbfc;
+    }
+    .destaque-link-roj:hover {
+      text-shadow: 0 1px 65px #f40000;
+    }
+    .destaque-link-ros:hover {
+      text-shadow: 0 0 85px #fe4891fc;
+    }
+    .destaque-link-ama:hover {
+      text-shadow: 0 0 85px #ffce0bfc;
+    }
+    footer {
+      grid-area: footer;
+      background-color: var(--color-header-footer);
+      color: var(--color-header-text);
+      text-align: center;
+      padding: 1%;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      transition: transform .6s ease-in-out, background .4s ease-in-out, border-radius .6s ease-in-out, box-shadow .5s ease-in-out;
+    }
+    footer:hover {
+        background: var(--color-footer-hover);
+        box-shadow: 0 0 55px rgba(155, 66, 113, 0.835);
+        border-top-right-radius: 40%;
+        border-top-left-radius: 40%;
+        transform: scale(1.04);
+    }
+    
+    #Contacto a {
+      text-decoration: none;
+      color: var(--color-header-text);
+      transition: transform .3s ease-in-out, text-shadow .3s ease-in-out;
+    }
+    #Contacto a:hover {
+      color: #f7d5ff;
+      text-shadow: 0 0 35px #fcb9f3e3;
+    }
+    .up-icon {
+      font-size: 1.7rem;
+    }
+
+
+    .theme-toggle {
+      cursor: pointer;
+      background-color: transparent;
+      color: var(--color-boton);
+      padding: 8px 12px;
+      border: 2px solid var(--color-boton);
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .theme-toggle:hover {
+      background-color: var(--color-hover-boton);
+      color: var(--color-texto);
+      transition: all 0.3s;
+    }
