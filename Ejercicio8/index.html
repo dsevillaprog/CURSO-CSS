@@ -3,23 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ">
-    <title>Curso-CSS | Tu Carro</title>
+    <title>Curso-CSS | ㄒㄩ 匚卂尺尺ㄖ</title>
+    <meta name="author" content="𝓓𝓢𝓮𝓿𝓲𝓵𝓵𝓪𝓟𝓻𝓸𝓰 © ">
+    <meta name="artist" content="ᗪᔕᵉᵛⁱˡˡᵃᑭʳᵒᵍ">
+    <meta name="url" content="https://github.com/dsevillaprog">
+    <meta name="instrument" content="🄱 🄰 🅂 🄷 + 🄷 🆃 🄼 🅻  & 🄲 🆂 🅂 ">
     <link rel="stylesheet" type="text/css" href="css/Ejercicio8.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/car-logo.gif">
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function enableAutoplay() {
+            x.autoplay = true;
+            x.load();
+        }
+    </script>
 </head>
 
-<body>
-    <header>
-        <h1 id="inicio" class="titulo-web">Concesionarios <span class="tu_carro">Tu Carro</span></h1>
-        <p class="cabecera">Encuentra el coche de tus sueños</p>
+<body onload="enableAutoplay()">
+    <audio id="myAudio" autoplay>
+        <source src="img/start.ogg" type="audio/ogg">
+    </audio>
+    <header id="arriba">
+        <h1 class="titulo-web"><span class="tu_carro">ㄒㄩ 匚卂尺尺ㄖ </span> &MediumSpace;<img src="img/car-logo.gif" alt=""></h1>
+        <!-- <p class="cabecera">Encuentra el coche de tus sueños</p> -->
     </header>
     <div class="menu">
         <nav>
             <a href="../Ejercicio1/index.html">Inicio</a>
-            <a href="#modelo">Modelos</a>
-            <a href="#oferta">Ofertas</a>
-            <a href="#contacto">Contacto</a>
+            <a href="indiex.html#modelo">Modelos</a>
+            <a href="indiex.html#oferta">Ofertas</a>
+            <a href="indiex.html#contacto">Contacto</a>
         </nav>
     </div>
     <main>
@@ -27,7 +42,6 @@
         <!-- Creamos 2 clases para el div (catalogo between) -->
         <div class="catalogo between">
             <div class="coche mod1">
-                <span class="oferta">Oferta</span>
                 <!-- <picture>
                         <source media="(max-height: 700px)" srcset="img/imagen1.unsh.png">
                         <source media="(max-width: 600px)" srcset="img/paint2.imagen1.jpeg.png">
@@ -54,11 +68,7 @@
                 <p class="descripción">La versión más potente de la gama destaca además por su comportamiento dinámico y
                     una estética que no deja indiferente a nadie. Con 204 CV de potencia se convierte en uno de los
                     polivalentes más rápidos disponibles en el mercado europeo.La versión más potente de la gama destaca
-                    además por su comportamiento dinámico y una estética que no deja indiferente a nadie. Con 204 CV de
-                    potencia se convierte en uno de los polivalentes más rápidos disponibles en el mercado europeo.La
-                    versión más potente de la gama destaca además por su comportamiento dinámico y una estética que no
-                    deja indiferente a nadie. Con 204 CV de potencia se convierte en uno de los polivalentes más rápidos
-                    disponibles en el mercado europeo</p>
+                    además por su comportamiento dinámico y una estética que no deja indiferente a nadie.</p>
             </div>
             <div class="coche mod3">
                 <!-- <picture>
@@ -98,11 +108,7 @@
                 <p class="descripción">La versión más potente de la gama destaca además por su comportamiento dinámico y
                     una estética que no deja indiferente a nadie. Con 204 CV de potencia se convierte en uno de los
                     polivalentes más rápidos disponibles en el mercado europeo.La versión más potente de la gama destaca
-                    además por su comportamiento dinámico y una estética que no deja indiferente a nadie. Con 204 CV de
-                    potencia se convierte en uno de los polivalentes más rápidos disponibles en el mercado europeo.La
-                    versión más potente de la gama destaca además por su comportamiento dinámico y una estética que no
-                    deja indiferente a nadie. Con 204 CV de potencia se convierte en uno de los polivalentes más rápidos
-                    disponibles en el mercado europeo</p>
+                    además por su comportamiento dinámico y una estética que no deja indiferente a nadie.</p>
             </div>
             <div class="coche mod3">
                 <img src="img/imagen3.jpeg">
@@ -131,9 +137,7 @@
                     con una amplia gama de modelos que combinan rendimiento excepcional y precios atractivos. potente de
                     la gama destaca además por su comportamiento dinámico y una estética que no deja indiferente a
                     nadie. Con 204 CV de potencia se convierte en uno de los polivalentes más rápidos disponibles en el
-                    mercado europeopotente de la gama destaca además por su comportamiento dinámico y una estética que
-                    no deja indiferente a nadie. Con 204 CV de potencia se convierte en uno de los polivalentes más
-                    rápidos disponibles en el mercado europeo</p>
+                    mercado europeo.</p>
             </div>
             <div class="coche mod2">
                 <img src="img/imagen2.jpeg">
@@ -150,11 +154,7 @@
                 <p class="descripción">El Mazda MX-5 RF es el MX-5 sensato, con techo metálico y carrocería tipo "Targa"
                     en la que sólo se descapota un pequeño módulo en el techo, justo encima de conductor y pasajero,
                     potente de la gama destaca además por su comportamiento dinámico y una estética que no deja
-                    indiferente a nadie. Con 204 CV de potencia se convierte en uno de los polivalentes más rápidos
-                    disponibles en el mercado europeo potente de la gama destaca además por su comportamiento dinámico y
-                    una estética que no deja indiferente a nadie. Con 204 CV de potencia se convierte en uno de los
-                    polivalentes más rápidos disponibles en el mercado europeo con un elegante e hipnótico mecanismo
-                    eléctrico.</p>
+                    indiferente a nadie.</p>
             </div>
             <div class="coche mod2">
                 <img src="img/imagen2.jpeg">
@@ -179,8 +179,7 @@
                 <p class="descripción">La versión más potente de la gama destaca además por su comportamiento dinámico y
                     una potente de la gama destaca además por su comportamiento dinámico y una estética que no deja
                     indiferente a nadie. Con 204 CV de potencia se convierte en uno de los polivalentes más rápidos
-                    disponibles en el mercado europeo estética que no deja indiferente a nadie. Con 204 CV de potencia
-                    se convierte en uno de los polivalentes más rápidos disponibles en el mercado europeo</p>
+                    disponibles en el mercado europeo.</p>
             </div>
             <div class="coche mod3">
                 <img src="img/imagen3.jpeg">
@@ -189,15 +188,7 @@
                 <p class="descripción">El Mazda MX-5 RF es el MX-5 sensato, con techo metálico y carrocería tipo "Targa"
                     en la que sólo se descapota un pequeño módulo en el techo, justo encima de conductor y pasajero, con
                     un elegante e hipnótico mecanismo eléctrico.potente de la gama destaca además por su comportamiento
-                    dinámico y una estética que no deja indiferente a nadie. Con 204 CV de potencia se convierte en uno
-                    de los polivalentes más rápidos disponibles en el mercado europeopotente de la gama destaca además
-                    por su comportamiento dinámico y una estética que no deja indiferente a nadie. Con 204 CV de
-                    potencia se convierte en uno de los polivalentes más rápidos disponibles en el mercado
-                    europeopotente de la gama destaca además por su comportamiento dinámico y una estética que no deja
-                    indiferente a nadie. Con 204 CV de potencia se convierte en uno de los polivalentes más rápidos
-                    disponibles en el mercado europeopotente de la gama destaca además por su comportamiento dinámico y
-                    una estética que no deja indiferente a nadie. Con 204 CV de potencia se convierte en uno de los
-                    polivalentes más rápidos disponibles en el mercado europeo</p>
+                    dinámico y una estética que no deja indiferente a nadie. </p>
             </div>
         </div>
         <h2>Catálogo - Distribución space-around</h2>
@@ -218,12 +209,8 @@
                 <h3>Modelo 2</h3>
                 <p class="precio">42.000 €</p>
                 <p class="descripción">La versión más potente de la gama destaca además por su comportamiento dinámico y
-                    una estética que no deja indiferente a nadie. Con 204 CV de potencia se convierte en uno de los
-                    polivalentes más rápidos disponibles en el mercado europeo.La versión más potente de la gama destaca
-                    además por su comportamiento dinámico y una estética que no deja indiferente a nadie. Con 204 CV de
-                    potencia se convierte en uno de los polivalentes más rápidos disponibles en el mercado europeo.La
-                    versión más potente de la gama destaca además por su comportamiento dinámico y una estética que no
-                    deja indiferente a nadie. Con 204 CV de potencia se convierte en uno de los polivalentes más rápidos
+                    una estética que no deja indiferente a nadie.La versión más potente de la gama destaca
+                    además por su comportamiento dinámico y una estética que no deja indiferente a nadie.
                     disponibles en el mercado europeo</p>
             </div>
             <div class="coche mod3">
@@ -480,20 +467,19 @@
     <footer>
 
         <div class="end_menu">
-            <nav style="padding: 2%;">
+            <nav>
                         <a class="a_inicio" href="../Ejercicio1/index.html">Inicio</a>
                         <a target="_self" href="../Ejercicio3/ejercicio3.html">DBZ</a>
                         <a target="_self" href="../Ejercicio8/index.html">Tu Carro</a>
                         <a target="_self" href="../Ejercicio9/index.html">GameStore</a>
-                        <a target="_self" href="../Ejercicio10/index.html">Animaciones</a>
-                        <a target="_self" href="../Ejercicio11/index.html">@media.flex</a>
-                        <a target="_self" href="../Ejercicio11/menu2.html">@media.checkbox</a>
                         <a target="_self" href="../Ejercicio12/index.html">DroneShop</a>
                         <a target="_self" href="../Ejercicio13/index2.html">FuegoTech</a>
+                        <a target="_self" href="../Ejercicio14/index3.html">ArquiBlog</a>
+                        <a target="_self" href="../Ejercicio20/ejercicio20.html">CreativStudio</a>
                 </nav>
         </div>
         <div class="copyrigth">
-            <p id="contacto"><a target="_blank" href="https://github.com/dsevillaprog">𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ©️</a> 2025 Todos los derechos reservados</p>
+            <p id="contacto"><a target="_blank" href="https://github.com/dsevillaprog">𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ©</a> 2025 Todos los derechos reservados <a href="indiex.html#arriba">⬆️</p>
         </div>
     </footer>
 </body>

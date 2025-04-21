@@ -57,16 +57,23 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    align-items: center;
+    justify-items: center;
 }
 h1 {
     font-size: 3em;
     text-shadow: 1px 2px 1px #e23737;
     text-shadow: 1px 1px 1px #a3a1a1;
-
+}
+h1 img {
+    max-height: 60px;
 }
 .tu_carro {
     color: #eef5ff;
     text-shadow: 2px 1px 1px #ccc;
+}
+.cabecera {
+    width: 100%;
 }
 .menu nav{
 	text-shadow: rgba(57, 63, 100, 1);
@@ -75,6 +82,10 @@ h1 {
 	text-align: center;
 	font-weight: 20px;
 }
+a {
+    text-decoration: none;
+    color: #c9caf6bd;
+}
 /* Estilo nav */
 nav {
     background-color: #003580;
@@ -82,29 +93,27 @@ nav {
     text-align: center;
 }
 /* Estilo nav */
-a:link {
-    color: #c9caf6bd;
-    text-decoration: none;
+nav a:link {
     margin: 0 15px;
     font-weight: bold;
     padding: 1%;
     border-radius: 6px;
 
 }
-a:active {
+nav a:active {
     color: #8b4ac4;
     font-weight: bold;
 }
-a:hover {
-    color: #004aad;
+nav a:hover {
+    color: #043e89;
     font-weight: bold;
     background-color: #b2b3f6bd;
     padding: 1%;
 }
-a:visited {
+nav a:visited {
     color: #004aad;
     font-weight: bold;
-    background-color: #b2b3f6bd;
+    background-color: #b2b3f644;
     padding: 1%;
 
 }
@@ -228,14 +237,15 @@ footer {
 .end_menu nav{
     color: #012554d6;
 	text-shadow: rgba(57, 63, 100, 1);
-	padding: 0.2% 0.2%;
+	padding: 1.2% 0.2%;
 	margin: 0;
 	text-align: center;
 	font-weight: 20px;
-    border-radius: 6px;
+    border-radius: 0px;
     width: 100%;
 
 }
+
 .a_inicio:hover {
     color: #056ffa;
     font-weight: bold;
@@ -243,11 +253,27 @@ footer {
     text-shadow: #45caff 1px 1px 1px;
 
 }
+
 footer .copyrigth {
     color: #c3c9e3;
     background-color: #011733d6;
     padding: 10px 0px 6px 0px;
 }
+footer .copyrigth:hover {
+    color: #c3c9e3;
+    background-color: #021e42d6;
+    padding: 10px 0px 6px 0px;
+}
+
+footer .copyrigth a {
+    color: #c3c9e3;
+    font-weight: bold;
+    padding: 20px 0px 20px 30px;
+}
+footer .copyrigth a:hover {
+    color: #a4b1eb;
+}
+
 
 @media(max-width:1080px){
     .catalogo{
