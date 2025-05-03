@@ -41,6 +41,8 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      color: inherit;
+      text-decoration: none;
     }
 
     body {
@@ -59,6 +61,7 @@
       position: absolute;
     }
 
+    hr {color: #ffffff00; height: 150px}
 
     header {
       grid-area: header;
@@ -183,7 +186,7 @@
       padding: 10px;
       font-size: 50px;
       text-shadow: 0 0 35px #bf63d8fe;
-      transition: transform .6s ease-in-out, text-shadow .3s ease-in-out, font-size .3s ease-in-out;
+      transition: transform .6s ease-in-out, text-shadow .3s ease-in-out, font-size .3s ease-in-out, filter .6s ease-in-out;
     }
     .destaque-link a {
       text-decoration: none;
@@ -205,6 +208,13 @@
     }
     .destaque-link-ama:hover {
       text-shadow: 0 0 85px #ffce0bfc;
+    }
+    .destaque-link-name:hover {
+      filter: drop-shadow(0 0 40px rgba(255, 240, 206, 0.849));
+    }
+    .txt-name {
+      width: 20%;
+      height: auto;
     }
     footer {
       grid-area: footer;
