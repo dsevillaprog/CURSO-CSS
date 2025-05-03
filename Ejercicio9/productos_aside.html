@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Ejemplo 9 - Animaciones con @keyframes -->
+    <title>GameStore | Aside*</title>
+    <meta name="author" content="𝓓𝓢𝓮𝓿𝓲𝓵𝓵𝓪𝓟𝓻𝓸𝓰 © ">
+    <meta name="artist" content="ᗪᔕᵉᵛⁱˡˡᵃᑭʳᵒᵍ">
+    <meta name="url" content="https://github.com/dsevillaprog">
+    <meta name="instrument" content="🄱 🄰 🅂 🄷 + 🄷 🆃 🄼 🅻  & 🄲 🆂 🅂 ">
+    <link rel="stylesheet" type="text/css" href="css/Ejercicio9_aside.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/logo-gamepad-azu.png">
+    <!-- <script src="jscript/Ejercicio9.js"></script> -->
+</head>
+
+<body onLoad="deoferta()">
+    <nav>
+        <ul>
+            <li><a href="index.html#slideIn">Inicio</a></li>
+            <li><a href="#psx">PlayStation</a></li>
+            <li><a href="#nintendo">Nintendo</a></li>
+            <li><a href="index.html#fin">Contacto</a></li>
+        </ul>
+    </nav>
+    <header class="titulo-web titulo-productos">
+        <h1>Catálogo de Juegos</h1>
+        <div class="nos_dedicamos-kame"></div>
+        <br>
+    </header>
+    
+    <main class="catalogo">
+        <div class="en-oferta">
+            <div id="ver-ofertas"></div>
+        </div>
+        <img class="psx-logo">
+        <div id="psx">
+            <!-- id=head-psx .js inner.... -->
+
+
+
+
+
+            <article class="producto">
+                <img src="img/spiderman_cover.png" alt="Spider-man 2">
+                <h5>Spider-man 2 - PS5</h5>
+                <h4 class="precio">59.99 €</h4>
+                <p class="descripcion">Balancéate, salta y usa las nuevas Alarañas para desplazarte más veloz que
+                    nunca por la Nueva York de Marvel, cambiando rápidamente entre Peter Parker y Miles Morales.
+                    Vive sus diferentes historias con nuevos poderes épicos, y enfréntate al icónico villano Venom,
+                    que amenaza con destruir sus vidas, su ciudad y a sus seres queridos
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/last_cover.png" alt="The Last of Us Remastered">
+                <h5>The Last of Us Remastered - PS4</h5>
+                <h4 class="precio">49.99 €</h4>
+                <p class="descripcion"> En un mundo hostil y post-pandémico, las circunstancias desesperadas acaban
+                    uniendo a Ellie y Joel, quienes deben confiar el uno en el otro para sobrevivir en un viaje
+                    salvaje por lo que queda de Estados Unidos.
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/God_of_War.png" alt="God of War Ragnarok">
+                <h5>God of War Ragnar&#246;k - PS5</h5>
+                <h4 class="precio">69.99 €</h4>
+                <p class="descripcion">Compra God of War Ragnar&#246;k Launch Edition para PlayStation 5, vuelve el
+                    clásico de acción a tu consola, revive las aventuras junto al Dios de la Guerra explorando
+                    paisajes mitológicos increíbles, viajando por los nueve reinos y enfrentandose a nuevos desafíos
+                    con imponentes enemigos.
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+
+            <article class="producto" id="horizon">
+                <img src="img/horizon.png" alt="Horizon Forbidden West">
+                <h5>Horizon Forbidden West - PS5</h5>
+                <h4 class="precio">59.99 €</h4>
+                <p class="descripcion">Explora páramos remotos, enfréntate a máquinas más grandes e imponentes y
+                    descubre increíbles tribus en tu regreso a un futuro lejano en el mundo apocalíptico de Horizon.
+                    <a href="#horizon" onclick="vermas('mas1');" id="mas1">... [ver más]</a>
+                </p>
+
+                <p id="desplegar1" style="display:none;">La tierra se muere. Las rugientes tormentas y una
+                    desolación imparable causan estragos entre lo que queda de la humanidad, unas cuantas tribus
+                    dispersas, mientras nuevas y temibles máquinas merodean por sus fronteras. La vida en la Tierra
+                    se enfrenta a una nueva extinción y nadie sabe por qué.
+                    <a href="#horizon" onclick="vermas('menos1');" id="menos1">... [ver menos]</a>
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/gt5.png" alt="Gran Turismo 7">
+                <h5>Gran Turismo 7 - PS5</h5>
+                <h4 class="precio">69.99 €</h4>
+                <p class="descripcion">Ya seas un corredor competitivo, un coleccionista, un perfeccionista, un
+                    diseñador, un fotógrafo o un entusiasta de los arcades, alimenta tu pasión por los coches con
+                    elementos inspirados en el pasado, el presente y el futuro de Gran Turismo.
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+
+            <article class="producto" id="verFF12">
+                <img src="img/ff12.png" alt="Final Fantasy XVI">
+                <h5>Final Fantasy XVI - PS5</h5>
+                <h4 class="precio">69.99 €</h4>
+                <p class="descripcion">Esta es la historia de Clive Rosfield, un guerrero al que se le ha concedido
+                    el título de "Primer Escudo de Rosaria" y que ha jurado proteger a su hermano menor Joshua, el
+                    dominador del Fénix.
+                    <a href="#verFF12" onclick="vermas('mas');" id="mas">... [ver más]</a>
+                </p>
+                <p id="desplegar" style="display:none;">En poco tiempo, Clive se verá envuelto en una gran tragedia
+                    y jurará vengarse del Eikon Oscuro Ifrit, una misteriosa entidad que trae la calamidad a su
+                    paso.
+                    <a href="#verFF12" onclick="vermas('menos');" id="menos">... [ver menos]</a>
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+        </div>
+
+
+        <!-- 
+            <div class="banner-nintendo">
+            </div> -->
+        <!-- <p id="head-nintendo"></p> -->
+        <img class="nintendo-logo" src="../img/nintendo-vector-logo-400x400.png" alt="">
+        <section id="nintendo">
+
+            <article class="producto">
+                <img src="img/zelda.png" alt="The Legend of Zelda">
+                <h5>The Legend of Zelda: Echoes of Wisdom - Switch</h5>
+                <h4 class="precio">59.99 €</h4>
+                <p class="descripcion">Aúna fuerzas con la misteriosa hada Tri, y usa el poder del cetro de Tri para
+                    crear réplicas, es decir, duplicados de cosas que encuentres en el entorno. Luego podrás recrear
+                    dichas réplicas cuando lo necesites para resolver acertijos y derrotar a los enemigos.
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/odisey.png" alt="Super Mario Odyssey">
+                <h5>Super Mario Odyssey - Switch</h5>
+                <h4 class="precio">49.99 €</h4>
+                <p class="descripcion">Acompaña a Mario en una aventura en 3D enorme por todo el planeta usando sus
+                    nuevas habilidades para recoger lunas que servirán de combustible a tu aeronave, la Odyssey. ¡Y
+                    entretanto, rescata a la princesa Peach de las garras de Bowser!
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/pokemon.png" alt="Pokémon Escarlata">
+                <h5>Pokémon Escarlata - Switch</h5>
+                <h4 class="precio">59.99 €</h4>
+                <p class="descripcion">Las fronteras entre las distintas ciudades y la naturaleza se desdibujan en
+                    esta región. Los Pokémon que habitan en ella están por doquier. ¡Prepárate para verlos allá
+                    adonde vayas, por tierra, mar y aire! Podrás disfrutar de una experiencia al más puro estilo
+                    Pokémon, enfrentándote a Pokémon salvajes para hacerte con ellos, pero esta vez en una aventura
+                    de mundo abierto que hará las delicias de pequeños y mayores.
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/metroid.png" alt="Metroid Dread">
+                <h5>Metroid Dread - Switch</h5>
+                <h4 class="precio">49.99 €</h4>
+                <p class="descripcion">La historia de Samus continúa tras los acontecimientos de Metroid Fusion
+                    cuando aterriza en el planeta ZDR para investigar una misteriosa transmisión enviada a la
+                    Federación Galáctica. Este planeta remoto está totalmente dominado por agresivas formas de vida
+                    alienígena y seres mecánicos aterradores. Samus es más ágil que nunca, pero ¿logrará escapar de
+                    las garras de la amenaza inhumana que merodea por las profundidades de ZDR?
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/splatoon.png" alt="Splatoon 3">
+                <h5>Splatoon 3 - Switch</h5>
+                <h4 class="precio">49.99 €</h4>
+                <p class="descripcion">¡Haz de Cromópolis (del primer juego de Splatoon) tu centro de operaciones
+                    con la primera ola del contenido descargable de pago pase de expansión de Splatoon 3!
+                    Cromópolis, otra gran metrópolis del universo de Splatoon, ha cambiado un poco en los últimos
+                    años con algunas nuevas tiendas. ¿Quieres algo de música? Visita Cromópolis para disfrutar de
+                    los conciertos de las Calamarciñas durante los festivales.
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/mario_kart.png" alt="Mario Kart 8 Deluxe">
+                <h5>Mario Kart 8 Deluxe - Switch</h5>
+                <h4 class="precio">59.99 €</h4>
+                <p class="descripcion">Los populares circuitos y personajes de la versión de Wii U regresan, junto a
+                    los circuitos y personajes descargables, además de personajes nuevos: Inkling chico e Inkling
+                    chica de Splatoon; el Rey Boo; Huesitos y Bowsy. Y cuando la competición es tan elevada, cada
+                    piloto necesitará llevar ahora dos objetos simultáneamente, incluyendo novedades como el ladrón
+                    de objetos Boo o la pluma, que permite saltar en las batallas.
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+
+
+
+
+
+            <!-- Hacer scprit para insertar ofertas al inicio-->
+
+
+
+
+
+
+
+            <article class="producto oferta" id="witcher">
+                <img src="img/witcher.png" alt="The Witcher 3">
+                <h5>The Witcher 3 : Complete Edition - PS5</h5>
+                <h4 class="precio">29.99 €</h4>
+                <p class="descripcion">En un continente devastado por la guerra e infestado de criaturas, tu misión
+                    es encontrar a Ciri, la niña de la profecía, un arma viviente que puede alterar el mundo tal y
+                    como lo conocemos.
+                    <a href="#witcher" onclick="vermas('mas-witcher');" id="mas-witcher">... [ver más]</a>
+                </p>
+                <div id="desplegar-witcher" style="display:none;">
+                    <p>La Complete Edition incluye:</p>
+                    <ul>
+                        <li>
+                            <p>El juego base, que ofrece una descomunal aventura en un mundo abierto de más de 100
+                                horas de duración
+                            </p>
+                        </li>
+                        <li>
+                            <p>Dos enormes expansiones de historia: Hearts of Stone y Blood and Wine, ¡con más de 50
+                                horas adicionales de juego!
+                            </p>
+                        </li>
+                    </ul>
+                    <p>Esta edición de The Witcher 3: Wild Hunt ha sido <strong>mejorada con numerosos efectos
+                            visuales y mejoras técnicas</strong>, incluidos un nivel de detalle perfeccionado,
+                        tiempos de carga más rápidos, una gran variedad de mods creados y recién desarrollados por
+                        la comunidad, trazado de rayos en tiempo real, compatibilidad con sonido 3D y mucho más,
+                        todo ello implementado pensando en la potencia de PlayStation 5.
+                    </p>
+                    <p>El juego también emplea funciones únicas del mando DualSense, como su avanzada
+                        retroalimentación háptica y los gatillos adaptativos, que logran que te sumerjas en la
+                        aventura aún más.
+                        <a href="#witcher" onclick="vermas('menos-witcher');" id="menos-witcher">... [ver menos]</a>
+                    </p>
+                </div>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+
+            <article class="producto oferta">
+                <img src="img/kong.png" alt="Donkey Kong Country Returns">
+                <h5>Donkey Kong Country Returns HD - Switch</h5>
+                <h4 class="precio">34.99 €</h4>
+                <p class="descripcion">Ayuda a Donkey Kong y Diddy Kong a recuperar su preciada provisión de
+                    plátanos de las garras de la tribu Tiki Tak. Pisotea a los enemigos, desplázate entre barriles a
+                    velocidades de vértigo y súbete a cohetes, vagonetas e incluso a lomos de Rambi el rinoceronte,
+                    en 80 niveles distribuidos en nueve mundos.
+                </p>
+                <button class="reservar">Reservar</button>
+                <button class="comprar">COMPRAR<br>AHORA</button>
+            </article>
+            
+        </section>
+        
+    </main>
+
+<!-- aside>div.aside-block>ul.RSS-lista*2>li*30>a.RSS-link{Noticias_relacionadas } -->
+<aside>
+    <div class="aside-block">
+        <ul class="RSS-lista">
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+        </ul>
+        <ul class="RSS-lista">
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+            <li><a href="" class="RSS-link">Noticias_relacionadas</a></li>
+        </ul>
+    </div>
+</aside>
+</div>
+    <footer id="pie_pagina">
+        <div class="social">
+            <a target="_blank" href="https://github.com/dsevillaprog"></a>
+        </div>
+        <p class="pie_pag">
+            <a href="mailto:𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ©️@example.com">𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 ©️</a> 
+            <strong>&MediumSpace;2025&MediumSpace;</strong> Todos los derechos reservados&MediumSpace;&MediumSpace;
+        </p>
+    </footer>
+
+    <script src="jscript/Ejercicio9.js"></script>
+</body>
+
+</html>
