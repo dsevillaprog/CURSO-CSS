@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dragón Blanco</title>
+  <meta name="author" content="𝓓𝓢𝓮𝓿𝓲𝓵𝓵𝓪𝓟𝓻𝓸𝓰 © ">
+  <meta name="artist" content="ᗪᔕᵉᵛⁱˡˡᵃᑭʳᵒᵍ">
+  <meta name="url" content="https://github.com/dsevillaprog">
+  <meta name="instrument" content="🄱 🄰 🅂 🄷 + 🄷 🆃 🄼 🅻  & 🄲 🆂 🅂 ">
+  <link rel="stylesheet" type="text/css" href="css/Ejercicio24.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+</head>
+
+<body>
+  <header id="Inicio">
+    <div class="">
+      <img class="img-logo" src="img/logo.png" alt="Logo Dragón Blanco">
+      <h1><img class="img-txt-name" src="img/txt-name.png" alt="Dragón Blanco"></h1>
+      <a class="btn" href="Cursos.html">Ver Cursos</a>
+      <h2><img class="img-txt-slogan" src="img/txt-slogan.png" alt="Disciplina y carácter desde 1989"></h2>
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="Nosotros.html">Nosotros</a>
+    <a href="Cursos.html">Cursos</a>
+    <a href="Servicios.html">Servicios</a>
+    <a href="#Inicio">Galería</a>
+    <a href="Contacto.html">Contacto</a>
+  </nav>
+
+  <section>
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-image" src="" alt="Lightbox Image">
+        </div>
+    </div>
+
+    <!-- <div class="gallery">
+        <img src="../ejercicio21/1.jpg" alt="Image 1" onclick="openLightbox(this.src)">
+        <img src="../ejercicio21/2.jpg" alt="Image 2" onclick="openLightbox(this.src)">
+        <img src="../ejercicio21/3.jpg" alt="Image 3" onclick="openLightbox(this.src)">
+    </div> -->
+
+
+    <h2 class="space-big">🎞⠀⠀Galería⠀⠀🎞</h2>
+    <br>
+    <div class="div-center">
+      <br>
+      <h2>⌖⠀Entrenamientos⠀⌖</h2>
+      <br>
+      <div class="div-center">
+        <img class="img-galeria" src="img/entrenamiento.jpeg" alt="Entrenamiento" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/entrenamiento-1.jpeg" alt="Entrenamiento" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/entrenamiento-3.jpeg" alt="Entrenamiento" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/competicion3.jpg" alt="Entrenamiento" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/entrenamiento-5.jpeg" alt="Entrenamiento" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/entrenamiento-6.jpeg" alt="Entrenamiento" onclick="openLightbox(this.src)">
+      </div>
+    </div>
+
+    <main>
+      <hr class="space-hig">
+    </main>
+
+    <div class="div-center">
+      <br>
+      <h2>🎖⠀Competiciones⠀🎖</h2>
+      <br>
+      <div class="div-center">
+        <img class="img-galeria" src="img/competicion.jpg" alt="Competición" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/competicion2.jpg" alt="Competición" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/entrenamiento-4.jpeg" alt="Competición" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/competicion4.jpg" alt="Competición" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/competicion5.jpg" alt="Competición" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/competicion7.jpg" alt="Competición" onclick="openLightbox(this.src)">
+      </div>
+    </div>
+
+    <main>
+      <hr class="space-hig">
+    </main>
+
+    <div class="div-center">
+      <br>
+      <h2>⌂⠀Eventos Internos⠀⌂</h2>
+      <br>
+      <div class="div-center">
+        <img class="img-galeria" src="img/evento-1.jpg" alt="Evento interno" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/evento-2.jpg" alt="Evento interno" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/evento-3.jpg" alt="Evento interno" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/evento-4.jpg" alt="Evento interno" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/evento-6.jpg" alt="Evento interno" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/evento-inf.jpg" alt="Evento interno" onclick="openLightbox(this.src)">
+      </div>
+    </div>
+
+    <main>
+      <hr class="space-hig">
+    </main>
+
+    <div class="div-center">
+      <br>
+      <h2>乂⠀Graduaciones⠀乂</h2>
+      <br>
+      <div class="div-center">
+        <img class="img-galeria" src="img/graduacion-1.png" alt="Graduación" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/graduacion-2.jpg" alt="Graduación" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/graduacion-3.jpg" alt="Graduación" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/graduacion-4.jpg" alt="Graduación" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/grupo-graduacion.jpeg" alt="Graduación" onclick="openLightbox(this.src)">
+        <img class="img-galeria" src="img/grupo-graduacion-inf.jpeg" alt="Graduación" onclick="openLightbox(this.src)">
+      </div>
+      <br>
+    </div>
+
+    <main>
+      <hr class="space-hig">
+    </main>
+
+    <div class="div-center">
+      <br>
+      <h2>🎞⠀Videos⠀🎞</h2>
+      <br>
+      <div class="div-center card-curso">
+        <div class="div-center">
+          <div id="clip-Abe">
+            <h3>Abe Keigo</h3>
+            <br>
+            <iframe class="clip" src="https://www.youtube-nocookie.com/embed/ghfVR3Jitbc?si=Wv0yfpd5Yz9aT8yB"
+              title="Abe Keigo Demo" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <br class="space-mid">
+          </div>
+          <!-- <video class="clip">
+                <source class="clip" src="https://www.youtube.com/watch?v=ghfVR3Jitbc" type="video/mp4">
+            </video> -->
+          <div id="clip-Polo">
+            <h3>Javier Pérez Polo</h3>
+            <br>
+            <iframe class="clip" src="https://www.youtube-nocookie.com/embed/oIeGjbAsWUY?si=zp0vwnphENDsEAOn&amp;start=27" title="Javier Pérez Polo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <br class="space-mid">
+          </div>
+
+          <div id="clip-Penha">
+            <h3>Sérgio Luiz da Penha</h3>
+            <br>
+            <iframe class="clip" src="https://www.youtube-nocookie.com/embed/KMYBMrv-zGw?si=LdLpu1wH_-JZXgtu&amp;start=42" title="Sérgio Luiz da Penha" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <br class="space-mid">
+          </div>
+        </div>
+
+      </div>
+      <br>
+    </div>
+  </section>
+
+  <main>
+    <div class="div-center space-big">
+      <a href="index.html"><img class="img-logo" src="img/logo.png" alt="Logo Dragón Blanco"></a>
+    </div>
+  </main>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="Nosotros.html">Nosotros</a>
+    <a href="Cursos.html">Cursos</a>
+    <a href="Servicios.html">Servicios</a>
+    <a href="#Inicio">Galería</a>
+    <a href="Contacto.html">Contacto</a>
+  </nav>
+  <footer>
+    <div class="derechos">
+      <p><a target="_blank" href="https://maps.app.goo.gl/gKF5tkyijXstujoE6">✉ Calle del Tajo, Manzanares el Real, 28410 Madrid, España</a>
+      </p>
+      <p><a href="index.html"> © 2025 Club de Artes Marciales Dragón Blanco</a></p>
+      <p><a target="_blank" href="https://github.com/dsevillaprog">Todos los derechos reservados</a></p>
+      <a target="_blank" href="https://es-es.facebook.com/"> ⓕ </a>
+      <a target="_blank" href="https://twitter.com/@X"> 𝕏 </a>
+      <a target="_blank" href="https://www.instagram.com/"> 🅾 </a>
+    </div>
+  </footer>
+  <script>
+    function openLightbox(src) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        lightboxImage.src = src;
+        lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.style.display = 'none';
+    }
+</script>
+</body>
+
+</html>
