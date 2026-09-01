@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <!-- Índice del Curso de CSS:
+         Aquí se irán enlazando los Ejemplos y Ejercicios del curso -->
+    <meta charset="UTF-8">
+    <title>Curso-CSS | Inicio del Curso de CSS</title>
+    <meta name="author" content="𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 © ">
+    <meta name="artist" content="ᗪᔕᵉᵛⁱˡˡᵃᑭʳᵒᵍ">
+    <meta name="url" content="https://github.com/dsevillaprog">
+    <meta name="instrument" content="🄱 🄰 🅂 🄷 + 🄷 🆃 🄼 🅻  & 🄲 🆂 🅂 ">
+    <meta name="copyright" content="𝓓𝓢𝓮𝓿𝓲𝓵𝓵𝓪𝓟𝓻𝓸𝓰 © 2025 Todos los Derechos Reservados">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Ejercicio1.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo-css.png">
+</head>
+
+<body>
+    <!-- Índice del Curso de CSS:
+         Aquí se irán enlazando los Ejemplos y Ejercicios del curso -->
+    <header id="up">
+        <h1 id="titulo-web">Bienvenido al Curso de CSS</h1>
+        <p class="subtitulo">Aprendiendo <a href="../Ejercicio1/index.html">CSS, </a> <a href="../../Curso-HTML/Ejercicio1/index.html">HTML</a> y <a href="../../Curso-Formularios/index.html">JS</a></p>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="../Ejercicio8/index.html">TU CARRO</a></li>
+            <li><a href="../../Curso-CSS/Ejercicio9/index.html">GAMESTORE</a></li>
+            <li><a href="../../Curso-CSS/Ejercicio12/index.html">DSKY PROD</a></li>
+            <li><a href="../Ejercicio13/index2.html">FUEGO TECH</a></li>
+            <li><a href="../Ejercicio14/index3.html">ARQUI BLOG</a></li>
+            <li><a href="../Ejercicio20/index.html">CREATIV STUDIO</a></li>
+            <li><a href="../Ejercicio24/index.html">DRAGÓN BLANCO</a></li>
+            <li><a href="../../Curso-Formularios/buscadores-web/BUSCADORES-WEB.html" target="_blank">🔍︎ BUSCADORES-WEB</a></li>
+
+
+        </ul>
+
+    </nav>
+    <section class="contenido">
+        <div class="head-logo">
+            <div class="head-img">
+                <img class="logo-css" src="../img/logo-css-tr.png" alt="Logo css">
+            </div>
+            <div class="head-txt">
+                <h1>CSS (Cascading Style Sheets)</h1>
+                <p><b>CSS (Hojas de Estilo en Cascada)</b> es el código que usamos para dar estilo a una página web.</p>
+                <p>CSS Básico te lleva a través de lo que necesitas para empezar.</p>
+                <p>Contestará a preguntas del tipo: ¿Cómo hago mi texto rojo o negro?</p>
+                <p>¿Cómo hago que mi contenido se muestre en tal y tal lugar de la pantalla?</p>
+                <p>¿Cómo decoro mi página web con imágenes de fondo y colores?</p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h2>Anatomía de una regla CSS</h2>
+        <div class="img-400 regla-css"></div>
+        <br><br>
+        <!-- Cursor Property -->
+        <div style="width: 40%; margin: auto;border-radius: 8px; border: 1px solid #7e009e; padding: 15px 20px;">
+           <h2>The cursor Property</h2>
+           <p>Mueve el cursor sobre el texto para ver sus estilos:</p>
+           <span style="display: block; width: 100%; cursor: auto;">auto</span>
+           <span style="display: block; width: 100%; background-color: #e4e3e3cc; cursor: crosshair;">crosshair</span>
+           <span style="display: block; width: 100%; cursor: default;">default</span>
+           <span style="display: block; width: 100%; background-color: #e4e3e3cc; cursor: e-resize;">e-resize</span>
+           <span style="display: block; width: 100%; cursor: help;">help</span>
+           <span style="display: block; width: 100%; background-color: #e4e3e3cc; cursor: move;">move</span>
+           <span style="display: block; width: 100%; cursor: n-resize;">n-resize</span>
+           <span style="display: block; width: 100%; background-color: #e4e3e3cc; cursor: ne-resize;">ne-resize</span>
+           <span style="display: block; width: 100%; cursor: nw-resize;">nw-resize</span>
+           <span style="display: block; width: 100%; background-color: #e4e3e3cc; cursor: pointer;">pointer</span>
+           <span style="display: block; width: 100%; cursor: progress;">progress</span>
+           <span style="display: block; width: 100%; background-color: #e4e3e3cc; cursor: s-resize;">s-resize</span>
+           <span style="display: block; width: 100%; cursor: se-resize;">se-resize</span>
+           <span style="display: block; width: 100%; background-color: #e4e3e3cc; cursor: sw-resize;">sw-resize</span>
+           <span style="display: block; width: 100%; cursor: text;">text</span>
+           <span style="display: block; width: 100%; Background-color: #e4e3e3cc; cursor: w-resize;">w-resize</span>
+           <span style="display: block; width: 100%; cursor: wait;">wait</span>
+           <br>
+        </div>        
+        <br><br>
+        <hr>
+        <br>
+        <img class="img-logo" src="../img/cmd.png" alt="Script">
+        <h4>Añadir links de todos los .html de la ruta a: index.html</h4>
+        <p> ⠀ - Busca recursivamente todos los archivos .html y:</p>
+        <p> ⠀  ⠀  Los añade al final de index.html como links &#60;a> dentro de un &#60;li> y separados con &#60;br></p>
+        <p> ⠀  ⠀  Los nombra como:' - Ejercicio 1', ' - Ejercicio 2', ...</p>
+        <pre class="code">
+        - Ejemplo:
+        
+            &#60;br>
+            &#60;li>&#60;a href="ruta/Ejemplo1/ejemplo1.html"> - Ejercicio 1&#60;/a>&#60;/li>
+            &#60;br>
+            &#60;li>&#60;a href="ruta/Ejemplo2/ejemplo2.html"> - Ejercicio 2&#60;/a>&#60;/li>
+        
+        - Código:
+        
+            n=0
+            echo "" >> index.html
+            echo "&#60;!-- Inicio del script --&#62;" >> index.html
+            for i in $( sudo find $(pwd) -type f -iname "*.html" ); do
+                n=$((n+1))
+                echo "&#60;br&#62;" >> index.html
+                echo "&#60;li>&#60;a href=\"$i\"&#62; - Ejercicio $n&#60;/a&#62;&#60;/li>" >> index.html
+            done
+
+Copy:
+
+n=0; for i in $( sudo find $(pwd) -type f -iname "*.html" ); do n=$((n+1)); echo "&#60;br&#62;" >> index.html; echo "&#60;li>&#60;a href=\"$i\"&#62; - Ejercicio $n&#60;/a&#62;&#60;/li>" >> index.html; done</pre>
+    </section>
+    <aside>
+        <h2>Ejercicios de CSS</h2>
+        <div>
+            <ul>
+                <li>
+                    <p><a href="../Ejercicio1/index_2.html">Ejemplo 1 - Texto</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio1/ejemplos_fuentes.html">Ejemplo 1.1 - Fuentes</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio2/ejercicio2.html">Ejemplo 2 - Div-in-Div</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio2/index.html">Ejercicio 2.1 - 𝕊𝕠𝕓𝕣𝕖 𝕞𝕚</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio3/ejercicio3.html">Ejercicio 3 - 𝚃𝚛𝚊𝚗𝚜𝚒𝚝𝚒𝚘𝚗</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio4/ejercicio4.html">Ejemplo 4 - Flex*</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio5/ejercicio5.html">Ejemplo 5 - Transition.scale</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio6/index.html">Ejemplo 6 - @Media</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio8/index.html">Ejercicio 8 - 𝚃𝚞 𝙲𝚊𝚛𝚛𝚘</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio9/index.html">Ejercicio 9 - 𝙶𝚊𝚖𝚎𝚂𝚝𝚘𝚛𝚎</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio9/productos.html">Ejemplo 9 - @keyframes</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio10/index.html">Ejemplo 10 - Animation</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio11/index.html">Ejemplo 11 - @media.flex</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio11/menu2.html">Ejemplo 11.1 - @media.checkbox</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio11/menu3.html">Ejemplo 11.2 - @media.checkbox1.</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio11/menu4.html">Ejemplo 11.3 - @media.dropdown.</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio11/menu5.html">Ejemplo 11.4 - @media.dropdown1.</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio12/index.html">Ejercicio 12 - 𝙳𝚛𝚘𝚗𝚎𝚂𝚑𝚘𝚙</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio13/index.html">Ejemplo 13 - Grid-container</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio13/index2.html">Ejercicio 13.1 - 𝙵𝚞𝚎𝚐𝚘𝚃𝚎𝚌𝚑</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio14/index.html">Ejemplo 14.1 - root:</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio14/index2.html">Ejemplo 14.2 - Grig.areas</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio14/index3.html">Ejercicio 14.3 - 𝙰𝚛𝚚𝚞𝚒𝙱𝚕𝚘𝚐</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio15/index.html">Ejemplo 15 - :root * area@media</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio16/index.html">Ejemplo 16 - :root banerFade</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio17/index.html">Ejemplo 17 - Slider ∘∘∘ </a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio18/index.html">Ejemplo 18 - Slider &#60; &#62;</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio19/index.html">Ejemplo 19 - Slider auto</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio20/index.html">Ejercicio 20 - 𝙲𝚛𝚎𝚊𝚝𝚒𝚟𝚂𝚝𝚞𝚍𝚒𝚘</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio21/index.html">Ejemplo 21 - @layer</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio22/index.html">Ejemplo 22 - @layer</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio23/index.html">Ejercicio 23 - 𝙳𝚂𝙿𝚛𝚘𝚐 𝚂𝚘𝚕𝚞𝚝𝚒𝚘𝚗𝚜</a></p>
+                </li>
+                <li>
+                    <p><a href="../Ejercicio24/index.html">Ejercicio 24 - 𝙳𝚛𝚊𝚐𝚘𝚗 𝙱𝚕𝚊𝚗𝚌𝚘</a></p>
+                </li>
+            </ul>
+            <br>
+            <h2>Recursos Web</h2>
+            <ul>
+                <li><a target="_blank" href="../../Curso-Formularios/buscadores-web/BUSCADORES-WEB.html">🔍︎ 𝙱𝚄𝚂𝙲𝙰𝙳𝙾𝚁𝙴𝚂-𝚆𝙴𝙱</a></li>
+                <br>
+                <li><a target="_blank" href="https://www.w3schools.com/html/default.asp">W3 Schools</a></li>
+                <li><a target="_blank" href="https://www.w3schools.com/tags/ref_html_browsersupport.asp">Tags W3</a>
+                </li>
+                <li><a target="_blank" href="https://www.toptal.com/designers/htmlarrows/symbols/">Símbolos_&copy</a>
+                </li>
+                <li><a target="_blank" href="https://lenguajecss.com/css/layout/display-css/">CSS_Esp</a></li>
+                <li><a target="_blank" href="https://aulaclic.es/index.htm">AulaClick</a></li>
+                <br>
+                <!-- mono-compuestos-tonos-pers -->
+                <li><a target="_blank" href="https://color.adobe.com/es/">Adobe Color</a></li>
+                <li><a target="_blank" href="https://www.colorhunt.co/palettes/random">Paletas de Color</a></li>
+                <li><a target="_blank" href="https://www.colourlovers.com/">Paletas de Color</a></li>
+                <li><a target="_blank" href="https://rgbcolorcode.com/color/converter/">Color Converter</a></li>
+                <br>
+                <li><a target="_blank" href="https://studio.creativefabrica.com/vectorizer/">Vectorizer+Tools</a></li>
+                <li><a target="_blank" href="https://toppng.com/">Vector Images</a></li>
+                <li><a target="_blank" href="https://www.pngarts.com/">Vector Real-Images</a></li>
+                <li><a target="_blank" href="https://www.freepik.es">Vector Images</a></li>
+                <li><a target="_blank" href="https://imagemagick.org/">Imagemagick</a></li>
+                <li><a target="_blank" href="https://usage.imagemagick.org/">Imagemagick_use</a></li>
+                <li><a target="_blank" href="https://imagemagick.org/script/command-line-processing.php#option">Imagemagick_CLI</a>
+                </li>
+                <li><a target="_blank" href="https://watermark.imageonline.co/es/">Place Holder</a></li>
+                <br>
+                <li><a target="_blank" href="https://rss.bloople.net/">RSS iframe</a></li>
+                <li><a target="_blank" href="https://emojidb.org/">Iconos copy</a> ©𖣠Ƥ𝓨</li>
+                <!-- 𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘=Mathematical Double-Struck  𝓓𝓢𝓮𝓿𝓲𝓵𝓵𝓪𝓟𝓻𝓸𝓰=Mathematical Bold Script  BlackChancery-->
+                <li><a target="_blank" href="https://fontawesome.com/">Fuentes</a> 𝓙ota</li>
+                <li><a target="_blank" href="https://oldenglishfont.net/">Fuentes </a> 🄵🅾🄽🆃🅂 </li>
+                <li><a target="_blank" href="https://www.sonidosmp3gratis.com">MP3 Sounds 🎵</a></li>
+                <li><a target="_blank" href="https://www.voicy.network/es">FX Sounds</a> 📽</li>
+                <li><a target="_blank" href="https://excalidraw.com/">Excalidraw</a> 🖋</li>
+                <br>
+                <li><a target="_blank" href="https://flexboxfroggy.com/#es">🐸 Flex-box-Froggy 🐸</a></li>
+            </ul>
+            </ul>
+        </div>
+    </aside>
+    <footer>
+        <div class="social">
+            <a target="_blank" href="https://github.com/dsevillaprog/"></a>
+        </div>
+        <p class="pie_pag"><a href="../Ejercicio2/index.html">⠀ 𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘</a></p>
+        <p class="derechos"><strong>© 2025&MediumSpace;</strong> Todos los derechos
+            reservados&MediumSpace;&MediumSpace;</p>
+        <p id="fin"><a class="icon-up" href="#up">⠀ ⌂ ⠀</a></p>
+    </footer>
+
+</body>
+
+</html>
