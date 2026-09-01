@@ -1,0 +1,636 @@
+/* Hoja de estilos externa de: Ejercicio 24*/
+@layer reset, base, layout, components;
+
+/* Estilo de la Capa: reset */
+@layer reset {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+/* Estilo de la Capa: base */
+@layer base {
+
+  /* Variables personalizadas */
+  :root {
+    --color-bg: #ffffff;
+    --color-cursos: #d0b09c64;
+    --color-benef: #c4fae294;
+    --color-clear: #ebebeb94;
+    --color-accent-hov: #cdc4b8;
+    --color-text: #222;
+    --color-txt: #fcf3ee;
+    --color-muted: #745e50dd;
+    --color-muted-hov: #9f8372dd;
+
+    --radius: 10px;
+    --radius-low: 4px;
+    --radius-mid: 2vw;
+    --radius-big: 6vw;
+
+    --bg-cover: no-repeat center/cover;
+
+    --fs-sub: 1.25rem;
+    --fs-small: 0.95rem;
+    --fs-med: 1.3rem;
+    --fs-big: 3rem;
+  }
+
+  body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    font-size: .8rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  hr {
+    color: var(--color-muted-hov);
+  }
+}
+
+/* Estilo de la Capa: layout */
+@layer layout {
+  header {
+    background: var(--color-cursos);
+    color: white;
+    text-align: center;
+    background: url(../img/Dojo_head.png) var(--bg-cover);
+    width: 100%;
+    height: 55vh;
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-muted);
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    flex: 1;
+    padding: 1%;
+    width: 150px;
+    font-weight: bold;
+    border-radius: var(--radius);
+  }
+
+  nav a:hover {
+    background-color: var(--color-muted-hov);
+    color: var(--color-txt);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-text);
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: var(--fs-small);
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Estilo de la Capa: components */
+@layer components {
+
+  /* Estilo de lightbox  */
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .lightbox-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Estilo de: Imágenes */
+  .img-logo {
+    height: 80px;
+    width: auto;
+    margin-top: 2%;
+  }
+
+  .img-txt-name {
+    height: 20vh;
+    width: auto;
+    max-width: 80%;
+  }
+
+  .img-txt-slogan {
+    height: 6vh;
+    width: auto;
+    max-width: 80%;
+    margin-top: 45px;
+  }
+
+  .img-card {
+    margin: 2rem auto;
+    width: 35vw;
+    height: auto;
+    filter: drop-shadow(0 0 40px rgba(255, 214, 119, 0.849));
+  }
+
+  .img-banner {
+    width: 100%;
+    height: 15vh;
+  }
+
+  .img-bg {
+    width: 100%;
+    background: url(../img/Dojo.jpg) var(--bg-cover);
+    padding: var(--fs-med);
+    opacity: .8;
+  }
+
+  .beneficios {
+    background: url(../img/beneficios.jpg) var(--bg-cover);
+  }
+
+  .img-sensei {
+    width: 50vw;
+    height: auto;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+
+  .img-galeria {
+    width: 30vw;
+    max-height: 20vw;
+    border-radius: var(--radius-low);
+  }
+
+  .card-list {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: auto;
+    gap: var(--radius-big);
+  }
+
+  
+  .clip {
+  height: 40vw;
+  width: 60vw;
+  z-index: 1;
+}
+
+/* Estilo de: Botones */
+.btn {
+  background-color: var(--color-text);
+  color: var(--color-txt);
+  padding: 3vh;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: var(--radius);
+}
+
+.btn:hover {
+  background-color: var(--color-cursos);
+  color: var(--color-text);
+}
+
+.btn-dojo {
+  margin-top: 5%;
+}
+
+/* Estilo de: index.html#Pilares */
+.pilares {
+  padding-top: var(--fs-big);
+  display: flex;
+  gap: 5%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.pilar {
+  position: relative;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.caption {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--radius-low);
+  font-size: var(--fs-sub);
+}
+
+/* Estilo de elementos: .card-*  */
+.card-curso {
+  border: solid 1px var(--color-muted-hov);
+  box-shadow: 0 0 25px var(--color-accent-hov);
+  background-color: var(--color-cursos);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  padding: 3% 5%;
+  margin: 5%;
+}
+
+.card-curso-benef {
+  border: solid 1px var(--color-accent-hov);
+  box-shadow: 0 0 25px var(--color-benef);
+  background-color: var(--color-benef);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  padding: 3% 5%;
+  margin: 5%;
+}
+
+.card-curso-clear {
+  border: solid 1px var(--color-accent-hov);
+  box-shadow: 0 0 25px var(--color-accent-hov);
+  background-color: var(--color-clear);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0%;
+  margin: 5%;
+}
+
+.card-curso-benef section,
+.card-curso-clear section,
+.card-curso section {
+  margin: auto;
+}
+
+/* Espaciado de elementos */
+.space-lo {
+  margin: .5vw
+}
+
+.space-low {
+  margin: 1vw
+}
+
+.space-mid {
+  margin: 3vw
+}
+
+.space-big {
+  margin: 5vw
+}
+
+.space-hig {
+  margin: 8vw
+}
+
+.space-auto {
+  margin: auto;
+  padding: auto
+}
+
+.padd-lo {
+  padding: 1%
+}
+
+.padd-low {
+  padding: 2%
+}
+
+.padd-mid {
+  padding: 3%
+}
+
+.padd-big {
+  padding: 5%
+}
+
+.padd-hig {
+  padding: 8%
+}
+
+.space-lo * {
+  margin: .5vw
+}
+
+.space-low * {
+  margin: 1vw
+}
+
+.space-mid * {
+  margin: 3vw
+}
+
+.space-big * {
+  margin: 5vw
+}
+
+.space-hig * {
+  margin: 8vw
+}
+
+.space-auto * {
+  margin: auto;
+  padding: auto
+}
+
+.padd-lo * {
+  padding: 1%
+}
+
+.padd-low * {
+  padding: 2%
+}
+
+.padd-mid * {
+  padding: 3%
+}
+
+.padd-big * {
+  padding: 5%
+}
+
+.padd-hig * {
+  padding: 8%
+}
+
+/* Espaciado y centrado de elementos*/
+.home-sec {
+  padding: 3%
+}
+
+.div-center {
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.L-aling {
+  padding: 3%;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: left;
+  justify-items: left;
+}
+
+.L-aling p,
+h5 {
+  text-align: left;
+}
+
+.border-10 {
+  border-radius: var(--radius);
+}
+
+.border-low {
+  border-radius: var(--radius-low);
+}
+
+.border-mid {
+  border-radius: var(--radius-mid);
+}
+
+.border-top-5 {
+  border-top-right-radius: var(--radius-big);
+  border-top-left-radius: var(--radius-big);
+}
+
+/* Estilo de: index.html#Opiniones de alumnos */
+.testimonios {
+  font-style: italic;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 600px;
+  background: #fdf7f7a1;
+  border-left: 5px solid var(--color-muted-hov);
+  border-radius: var(--radius-low);
+}
+
+.testimonios blockquote {
+  font-style: italic;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 600px;
+  background: #f0f0f0cd;
+  border-left: 5px solid var(--color-cursos);
+  border-radius: var(--radius-low);
+}
+
+.testimonios cite {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--color-muted);
+}
+
+/* Estilo del mapa embebido: Contacto.html#Dónde estamos */
+iframe {
+  width: 80vw;
+  height: 60vw;
+  border: solid 1px var(--color-accent-hov);
+  box-shadow: 0 0 25px var(--color-benef);
+  border-radius: var(--radius-low);
+}
+
+/* Estilo de: *.html#Entrar al Dojo/ CONTACTAR/ RESERVAR CLASE */
+.dojo {
+  color: white;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 20vh;
+  background: url(../img/dojo-zoom.png) var(--bg-cover);
+  opacity: .8;
+  transition: all .9s ease-in-out;
+}
+
+.dojo:hover {
+  background: url(../img/Dojo_head.png) var(--bg-cover);
+  opacity: 1;
+}
+
+/* Estilo de: *.html#footer .derechos */
+.derechos {
+  padding: 3%;
+}
+
+.derechos * {
+  margin: 0;
+  padding: 0;
+}
+
+.derechos p,
+a {
+  margin: .7%;
+}
+}
+
+/* Adaptación de estilo responsivo */
+@media (min-width: 768px) {
+
+  body {
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+
+  header {
+    height: 55vh;
+  }
+
+  .img-card {
+    margin: 2rem auto;
+    width: 25vw;
+  }
+
+  .img-sensei {
+    width: 35vw;
+    margin: 2rem auto;
+  }
+
+  .img-banner {
+    width: 100%;
+    height: 25vh;
+  }
+
+  .card-list {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .dojo {
+    height: 30vh;
+  }
+
+  .btn-dojo {
+    margin-top: 13%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  body {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  header {
+    height: 60vh;
+  }
+
+  .img-card {
+    width: 15vw;
+    margin: 2rem auto;
+  }
+
+  .img-sensei {
+    width: 25vw;
+    margin: 2rem auto;
+  }
+
+  .img-banner {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .card-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .dojo {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1880px) {
+
+  body,
+  .h2-curso {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  header {
+    height: 70vh;
+  }
+
+  .img-card {
+    width: 10vw;
+    margin: 2rem auto;
+  }
+
+  .img-sensei {
+    width: 15vw;
+    margin: 2rem auto;
+  }
+
+  .img-banner {
+    width: 100%;
+    height: 35vh;
+  }
+
+  .card-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .dojo {
+    height: 60vh;
+  }
+
+  .btn-dojo {
+    margin-top: 5%;
+  }
+}
