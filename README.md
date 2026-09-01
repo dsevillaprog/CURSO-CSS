@@ -1,4 +1,4 @@
-### <img src="/img/logo-html.png" alt="HTML" width="25" height="auto"> <img src="/img/logo-css.png" alt="CSS" width="25" height="auto"> Curso de Construcción de Páginas Web (MF0950_2)
+### <img src="/img/logo-html.png" alt="HTML" width="auto" height="25"> <img src="/img/logo-css.png" alt="CSS" width="auto" height="25"> Curso de Construcción de Páginas Web (MF0950_2)
 ##  
   - Creación de páginas web con el lenguaje de marcas
   - Elaboración de hojas de estilo
