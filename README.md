@@ -1,6 +1,6 @@
-### Curso de Construcción de Páginas Web ##### (MF0950_2)
+### Curso de Construcción de Páginas Web (MF0950_2)
 ##  
-### Elaboración de hojas de estilo (UF1303)
+### Módulo: Elaboración de hojas de estilo (UF1303)
 ##  
 
 
