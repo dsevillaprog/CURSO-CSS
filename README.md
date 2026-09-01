@@ -30,8 +30,8 @@
 ![CreativStudio](/img/CreativStudio.png?raw=true)
 ##  
 ###### DragonBlanco
-![DragonBlanco](/img/DragonBlanco.png?raw=true)
+<img src="/img/DragonBlanco.png" alt="DragonBlanco" width="auto" height="400">
 ##  
 ###### BUSCADORES-WEB
-![BUSCADORES-WEB](/img/BUSCADORES-WEB_html.png?raw=true)
+<img src="/img/BUSCADORES-WEB_html.png" alt="BUSCADORES-WEB" width="auto" height="400">
 ##  
