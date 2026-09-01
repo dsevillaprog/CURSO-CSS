@@ -9,9 +9,9 @@
   - Ejemplos y ejercicios del módulo de elaboración de hojas de estilo
  
  
-![alt text](/img/CURSO-CSS.png?raw=true)
+![CURSO-CSS](CURSO-CSS.png?raw=true)
 ##  
-![Logo](/img/GameStore.png "CURSO-CSS")
+![Logo](/img/GameStore.png)
 ###  
 ![alt text](./img/CURSO-CSS.png?raw=true)
 ####  
