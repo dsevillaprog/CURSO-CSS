@@ -1,4 +1,4 @@
-# logFilter.sh
+## logFilter.sh
 
 
 ### ⓘ Descripción
@@ -6,7 +6,7 @@
   - Filtra y consulta direcciones IPv4 con herramientas online y en listas de reputación de amenazas (DNSBL)
 
 
-## ⚙ ***Características***
+### ⚙ Características
 
     ╰─ Extrae las IPv4 del archivo Apache/access.log || lee archivo de IPv4 únicas (-i IPv4_únicas.lst)
     ╰─ Filtra por peticiones maliciosas y país
@@ -17,10 +17,10 @@
     ╰─ Refresca a IP de Tor al finalizar cada bloque de IPs
 
 
-## ** ☰ Dependencias:**
+#### ☰ Dependencias:
     `gawk curl dnsutils bind9-host jq netcat-openbsd dnsutils coreutils tor torsocks xclip`
 
-## 🛠 ***Instalación***
+### 🛠 Instalación
 
 1. Dar permisos de ejecución:
 
@@ -35,10 +35,10 @@
    ```
 
 
-## ** » Uso:**
+### » Uso:
     `./logFilter.sh -f LOGFILE] [-i IPV4LST] [-b IP_BLOCK] [-p HILOS] [-c TOOL] [-m] ]`
 
-## » Ejemplos de uso:
+#### » Ejemplos de uso:
 
    ```bash
     ./logFilter.sh -f <file.log> [-b <IP_TOR_BLOCK>] [-p <HILOS>]
