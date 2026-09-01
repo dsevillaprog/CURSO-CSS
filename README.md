@@ -1,4 +1,4 @@
-### Curso de Construcción de Páginas Web (MF0950_2)
+### ![HTML](/img/logo-html.png?raw=true) ![HTML](/img/logo-css.png?raw=true) Curso de Construcción de Páginas Web (MF0950_2)
 ##  
   - Creación de páginas web con el lenguaje de marcas
   - Elaboración de hojas de estilo
