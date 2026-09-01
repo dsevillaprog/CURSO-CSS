@@ -9,13 +9,16 @@
   - Ejemplos y ejercicios del módulo de elaboración de hojas de estilo
  
  
-![CURSO-CSS](CURSO-CSS.png?raw=true)
 ##  
-![Logo](/img/GameStore.png)
-###  
-![alt text](./img/CURSO-CSS.png?raw=true)
-####  
-![alt text](/img/DSkyProductions.png?raw=true)
-![alt text](/img/CreativStudio.png?raw=true)
-![alt text](/img/DragonBlanco.png?raw=true)
-![alt text](/img/BUSCADORES-WEB_html.png?raw=true)
+![CURSO-CSS](/img/CURSO-CSS.png?raw=true)
+##  
+![GameStore](/img/GameStore.png)
+##  
+![DSkyProductions](/img/DSkyProductions.png?raw=true)
+##  
+![CreativStudio](/img/CreativStudio.png?raw=true)
+##  
+![DragonBlanco](/img/DragonBlanco.png?raw=true)
+##  
+![BUSCADORES-WEB](/img/BUSCADORES-WEB_html.png?raw=true)
+##  
