@@ -18,25 +18,27 @@
 
 
 ##### ☰ Dependencias:
-    `gawk curl dnsutils bind9-host jq netcat-openbsd dnsutils coreutils tor torsocks xclip`
+   ```bash
+    gawk curl dnsutils bind9-host jq netcat-openbsd dnsutils coreutils tor torsocks xclip
+   ```
 
 #### 🛠 Instalación
 
 1. Dar permisos de ejecución:
-
    ```bash
     chmod +x logFilter.sh
    ```
 
 2. Ejecutar el script:
-
    ```bash
     ./logFilter.sh
    ```
 
 
 #### » Uso:
-    `./logFilter.sh -f LOGFILE] [-i IPV4LST] [-b IP_BLOCK] [-p HILOS] [-c TOOL] [-m] ]`
+   ```bash
+    ./logFilter.sh -f LOGFILE] [-i IPV4LST] [-b IP_BLOCK] [-p HILOS] [-c TOOL] [-m] ]
+   ```
 
 ##### » Ejemplos de uso:
 
