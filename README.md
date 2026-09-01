@@ -1,4 +1,4 @@
-### <img src="/img/logo-html.png" alt="HTML" width="auto" height="25"> <img src="/img/logo-css.png" alt="CSS" width="auto" height="25"> Curso de Construcción de Páginas Web (MF0950_2)
+### <img src="/img/logo-html.png" alt="HTML" width="auto" height="25"><img src="/img/logo-css-tr.png" alt="CSS" width="auto" height="25"><img src="/img/logo-js.png" alt="JavaScript" width="auto" height="25">  Curso de Construcción de Páginas Web (MF0950_2)
 ##  
   - Creación de páginas web con el lenguaje de marcas
   - Elaboración de hojas de estilo
@@ -6,7 +6,7 @@
 
 
 ##  
-### Módulo: Elaboración de hojas de estilo (UF1303)
+### Módulo: <img src="/img/logo-css-tr.png" alt="CSS" width="auto" height="25"> Elaboración de hojas de estilo (UF1303)
 ##  
 
 
