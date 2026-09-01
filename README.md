@@ -13,7 +13,7 @@
 ##  
 ![Logo](/img/GameStore.png "CURSO-CSS")
 ###  
-![alt text](/img/GameStore-1.png?raw=true)
+![alt text](./img/CURSO-CSS.png?raw=true)
 ####  
 ![alt text](/img/DSkyProductions.png?raw=true)
 ![alt text](/img/CreativStudio.png?raw=true)
