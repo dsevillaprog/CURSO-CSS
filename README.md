@@ -12,9 +12,17 @@
 
 ##### ⓘ  Contenido:
 
-  - Ejemplos y ejercicios del módulo de elaboración de hojas de estilo
-    
+  - Ejemplos y ejercicios del módulo de elaboración de hojas de estilo   
  
+##  
+##### » Uso:
+* Clonar el repositorio
+   ```bash
+    git clone https://github.com/dsevillaprog/CURSO-CSS.git
+   ```
+   
+*  Abrir index.html con el navegador
+*  Permitir audio y video en los ajustes del navegador
  
 ##  
 ###### Página principal
